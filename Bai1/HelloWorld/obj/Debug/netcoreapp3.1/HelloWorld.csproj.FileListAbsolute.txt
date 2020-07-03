@@ -1,0 +1,13 @@
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.exe
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.deps.json
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.json
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.dev.json
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.dll
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.pdb
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csprojAssemblyReference.cache
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfoInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfo.cs
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csproj.CoreCompileInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.dll
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.pdb
+D:\DATA2\CODEGYM\Module2\Bai1\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.genruntimeconfig.cache
