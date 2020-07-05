@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Bai2.ThaoTacVoiBang</StartupObject>
+    <StartupObject>Bai2.MainTotalDiagonal</StartupObject>
   </PropertyGroup>
 
 </Project>
