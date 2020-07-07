@@ -1,0 +1,13 @@
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.csprojAssemblyReference.cache
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.AssemblyInfoInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.AssemblyInfo.cs
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.csproj.CoreCompileInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.exe
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.deps.json
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.runtimeconfig.json
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.runtimeconfig.dev.json
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.dll
+D:\DATA2\CODEGYM\Module2\Bai3\bin\Debug\netcoreapp3.1\Bai3.pdb
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.dll
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.pdb
+D:\DATA2\CODEGYM\Module2\Bai3\obj\Debug\netcoreapp3.1\Bai3.genruntimeconfig.cache
