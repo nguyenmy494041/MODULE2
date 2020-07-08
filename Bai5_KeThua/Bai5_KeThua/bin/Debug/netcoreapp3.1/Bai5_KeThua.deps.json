@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Bai5_KeThua/1.0.0": {
+        "runtime": {
+          "Bai5_KeThua.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bai5_KeThua/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

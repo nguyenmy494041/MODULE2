@@ -1,0 +1,13 @@
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.exe
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.deps.json
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.runtimeconfig.json
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.runtimeconfig.dev.json
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.dll
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\bin\Debug\netcoreapp3.1\Bai5_KeThua.pdb
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.csprojAssemblyReference.cache
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.AssemblyInfoInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.AssemblyInfo.cs
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.csproj.CoreCompileInputs.cache
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.dll
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.pdb
+D:\DATA2\CODEGYM\Module2\Bai5_KeThua\Bai5_KeThua\obj\Debug\netcoreapp3.1\Bai5_KeThua.genruntimeconfig.cache
