@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.exe
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.deps.json
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.runtimeconfig.json
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.dll
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\bin\Debug\netcoreapp3.1\Marks Management System.pdb
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.AssemblyInfo.cs
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.dll
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.pdb
+E:\CODEGYM\Module2\Marks Management System\Marks Management System\obj\Debug\netcoreapp3.1\Marks Management System.genruntimeconfig.cache

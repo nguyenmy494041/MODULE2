@@ -133,7 +133,7 @@ namespace Bailamthem
 
         public string ShowProductInfo()
         {
-            return $"{Name}\t{Code}\t{Price}\t{Date.ToString("ddd, MMM dd yyyy")}\t\t{Manufactory}";
+            return $"{Name}\t{Code}\t{Price}\t{Date.ToString("ddd, MMM dd yyyy")}\t{Manufactory}";
         }
     }
 
@@ -199,7 +199,7 @@ namespace Bailamthem
 
         public void Show()
         {
-            string table = $"Name\tCode\tPrice\tDate\t\tManufactory";
+            string table = $"Name\tCode\tPrice\tDate\t\t\t Manufactory";
             for (int i = 0; i < products.Length; i++)
             {
                 table = table + $"\n" + products[i].ShowProductInfo();

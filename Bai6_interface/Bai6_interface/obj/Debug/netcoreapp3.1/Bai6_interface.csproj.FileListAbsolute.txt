@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.exe
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.deps.json
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.runtimeconfig.json
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.dll
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\bin\Debug\netcoreapp3.1\Bai6_interface.pdb
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.AssemblyInfo.cs
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.dll
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.pdb
+E:\CODEGYM\Module2\Bai6_interface\Bai6_interface\obj\Debug\netcoreapp3.1\Bai6_interface.genruntimeconfig.cache

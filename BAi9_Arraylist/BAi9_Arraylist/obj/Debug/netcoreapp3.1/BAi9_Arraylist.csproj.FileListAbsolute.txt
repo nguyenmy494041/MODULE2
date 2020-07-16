@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.exe
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.deps.json
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.runtimeconfig.json
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.dll
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\bin\Debug\netcoreapp3.1\BAi9_Arraylist.pdb
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.AssemblyInfo.cs
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.dll
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.pdb
+E:\CODEGYM\Module2\BAi9_Arraylist\BAi9_Arraylist\obj\Debug\netcoreapp3.1\BAi9_Arraylist.genruntimeconfig.cache

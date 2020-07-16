@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.exe
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.deps.json
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.runtimeconfig.json
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.dll
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\bin\Debug\netcoreapp3.1\BookMagagementSystem.pdb
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.AssemblyInfo.cs
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.dll
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.pdb
+E:\CODEGYM\Module2\Marks Management System\BookMagagementSystem\obj\Debug\netcoreapp3.1\BookMagagementSystem.genruntimeconfig.cache

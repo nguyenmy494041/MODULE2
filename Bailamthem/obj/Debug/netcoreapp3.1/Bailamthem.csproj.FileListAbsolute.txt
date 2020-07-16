@@ -11,3 +11,16 @@ D:\DATA2\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.csproj.Co
 D:\DATA2\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.dll
 D:\DATA2\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.pdb
 D:\DATA2\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.genruntimeconfig.cache
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.AssemblyInfo.cs
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.dll
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.pdb
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.exe
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.deps.json
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.runtimeconfig.json
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.dll
+E:\CODEGYM\Module2\Bailamthem\bin\Debug\netcoreapp3.1\Bailamthem.pdb
+E:\CODEGYM\Module2\Bailamthem\obj\Debug\netcoreapp3.1\Bailamthem.genruntimeconfig.cache

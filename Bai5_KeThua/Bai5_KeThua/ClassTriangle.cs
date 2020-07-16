@@ -8,7 +8,7 @@ namespace Bai5_KeThua
     {
         public static void Main()
         {
-            Triangle triangle = new Triangle(3, 4, 5);
+            Triangle triangle = new Triangle(7, 4, 15);
 
             Console.WriteLine(triangle.ToString());
 
@@ -76,32 +76,32 @@ namespace Bai5_KeThua
         }
 
 
-        // public string ClassificationTriangles()
-        // {
-        //     if (IsTriangle())
-        //     {
-        //         if (size1 == size2 && size2 == size3)
-        //         {
-        //             return "tam giac deu";
-        //         }
-        //         if (size1 == size2 || size2 == size3 || size3 == size1)
-        //         {
-        //             return "tam giac can";
-        //         }
-        //         if (size1 * size1 == size2 * size2 + size3 * size3 ||
-        //             size3 * size3 == size2 * size2 + size1 * size1 ||
-        //             size2 * size2 == size1 * size1 + size3 * size3)
-        //         {
-        //             return "tam giac vuong";
-        //         }
-        //         return "tam giac thuong";
+        public string ClassificationTriangles()
+        {
+            if (IsTriangle())
+            {
+                if (size1 == size2 && size2 == size3)
+                {
+                    return "tam giac deu";
+                }
+                if (size1 == size2 || size2 == size3 || size3 == size1)
+                {
+                    return "tam giac can";
+                }
+                if (size1 * size1 == size2 * size2 + size3 * size3 ||
+                    size3 * size3 == size2 * size2 + size1 * size1 ||
+                    size2 * size2 == size1 * size1 + size3 * size3)
+                {
+                    return "tam giac vuong";
+                }
+                return "tam giac thuong";
 
-        //     }
-        //     else return "not exit triangle";
-        // }
+            }
+            else return "not exit triangle";
+        }
         public override string ToString()
         {
-            if (IsTriangle()) return $" IsTriangle, is , Area: {GetArea()}, Perimeter: {GetPerimeter()}";
+            if (IsTriangle()) return $" IsTriangle, is {ClassificationTriangles()}, Area: {GetArea()}, Perimeter: {GetPerimeter()}";
             return "not exit triangle";
         }
     }

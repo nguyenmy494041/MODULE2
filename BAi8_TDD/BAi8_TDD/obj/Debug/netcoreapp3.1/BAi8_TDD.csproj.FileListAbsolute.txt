@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.exe
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.deps.json
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.runtimeconfig.json
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.dll
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\bin\Debug\netcoreapp3.1\BAi8_TDD.pdb
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.AssemblyInfo.cs
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.dll
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.pdb
+E:\CODEGYM\Module2\BAi8_TDD\BAi8_TDD\obj\Debug\netcoreapp3.1\BAi8_TDD.genruntimeconfig.cache

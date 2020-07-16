@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.AssemblyInfo.cs
+C:\Users\USER\source\repos\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.exe
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.deps.json
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.runtimeconfig.json
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.dll
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\bin\Debug\netcoreapp3.1\BAi7_CleanCode.pdb
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.AssemblyInfo.cs
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.dll
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.pdb
+E:\CODEGYM\Module2\BAi7_CleanCode\BAi7_CleanCode\obj\Debug\netcoreapp3.1\BAi7_CleanCode.genruntimeconfig.cache

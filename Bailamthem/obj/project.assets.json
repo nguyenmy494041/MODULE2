@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DATA2\\CODEGYM\\Module2\\Bailamthem\\Bailamthem.csproj",
+      "projectUniqueName": "E:\\CODEGYM\\Module2\\Bailamthem\\Bailamthem.csproj",
       "projectName": "Bailamthem",
-      "projectPath": "D:\\DATA2\\CODEGYM\\Module2\\Bailamthem\\Bailamthem.csproj",
+      "projectPath": "E:\\CODEGYM\\Module2\\Bailamthem\\Bailamthem.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\DATA2\\CODEGYM\\Module2\\Bailamthem\\obj\\",
+      "outputPath": "E:\\CODEGYM\\Module2\\Bailamthem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>Bailamthem.Quanlysampham</StartupObject>
+	  <StartupObject>Bailamthem.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

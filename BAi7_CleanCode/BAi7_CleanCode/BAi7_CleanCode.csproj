@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <StartupObject>BAi7_CleanCode.ClassTachmanguon</StartupObject>
+  </PropertyGroup>
+
+</Project>
