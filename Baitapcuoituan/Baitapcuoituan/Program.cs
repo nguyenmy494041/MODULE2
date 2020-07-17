@@ -116,6 +116,7 @@ namespace Baitapcuoituan
 
         public static void ShowPost()
         {
+            
             forum.Show();
         }
 
@@ -124,6 +125,7 @@ namespace Baitapcuoituan
             Console.WriteLine("Please input author");
             string authors = Console.ReadLine();
            Post k = forum.FindAuthor(authors);
+            Console.WriteLine($"id\t\ttitle\t\tcontent\t\tauthor\t\tcount\t\taveregeRate");
             k.DisPlay();
         }
 

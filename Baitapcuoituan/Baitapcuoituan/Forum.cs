@@ -70,7 +70,7 @@ namespace Baitapcuoituan
 
         public void Show()
         {
-            Console.WriteLine($"id \t title \t content \t author \t count \t averegeRate");
+            Console.WriteLine($"id\t\ttitle\t\tcontent\t\tauthor\t\tcount\t\taveregeRate");
            foreach(var item in Posts.Keys)
             {
                 Posts[item].DisPlay();
@@ -81,11 +81,18 @@ namespace Baitapcuoituan
         public Post FindAuthor( string authors)
         {
             int pos = -1;
-            for (int i = 1; i <= Posts.Count; i++)
+            //for (int i = 1; i <= Posts.Count; i++)
+            //{
+            //    if (Posts[i].Author == authors)
+            //    {
+            //        pos = i;
+            //    }
+            //}
+            foreach(var item in Posts.Keys)
             {
-                if (Posts[i].Author == authors)
+                if (Posts[item].Author == authors)
                 {
-                    pos = i;
+                    pos = item;
                 }
             }
             if (pos != -1) return Posts[pos];

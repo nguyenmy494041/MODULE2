@@ -34,7 +34,7 @@ namespace Baitapcuoituan
 
         public void DisPlay()
         {
-            Console.WriteLine($"{id} \t {title} \t {content} \t {author} \t {rate.Count} \t {averegeRate}");
+            Console.WriteLine($"{id}\t\t{title}\t\t{content}\t\t{author}\t\t{rate.Count}\t\t {averegeRate}");
         }
     }
 }
