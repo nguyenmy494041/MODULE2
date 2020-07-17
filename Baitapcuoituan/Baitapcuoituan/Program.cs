@@ -155,24 +155,7 @@ namespace Baitapcuoituan
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 
     public interface IPost
     {
