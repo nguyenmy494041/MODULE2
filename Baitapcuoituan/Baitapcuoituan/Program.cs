@@ -58,10 +58,7 @@ namespace Baitapcuoituan
                 }
             }
 
-
-
         }
-
 
 
         public static bool IsNumber(string pValue)
