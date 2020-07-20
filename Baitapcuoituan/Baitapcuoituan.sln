@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitapcuoituan", "Baitapcuoituan\Baitapcuoituan.csproj", "{B411209D-B649-446F-AEA5-98DC10462991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap1", "Baitapcuoituanlan2\Baitap1.csproj", "{940DC2F3-A2B4-4CC1-9919-DAB3412EE339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitap1", "Baitapcuoituanlan2\Baitap1.csproj", "{940DC2F3-A2B4-4CC1-9919-DAB3412EE339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAi2", "BAi2\BAi2.csproj", "{34AEE627-4E72-417C-A008-BA810C5A9077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BAi2", "BAi2\BAi2.csproj", "{34AEE627-4E72-417C-A008-BA810C5A9077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai3", "Bai3\Bai3.csproj", "{BD05E7C6-EDC7-4F67-936B-D0B76649E391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bai3", "Bai3\Bai3.csproj", "{BD05E7C6-EDC7-4F67-936B-D0B76649E391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai4", "Bai4\Bai4.csproj", "{50856BB3-CD12-4B3D-8DD2-FDF67E6B584C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BD05E7C6-EDC7-4F67-936B-D0B76649E391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD05E7C6-EDC7-4F67-936B-D0B76649E391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD05E7C6-EDC7-4F67-936B-D0B76649E391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50856BB3-CD12-4B3D-8DD2-FDF67E6B584C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50856BB3-CD12-4B3D-8DD2-FDF67E6B584C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50856BB3-CD12-4B3D-8DD2-FDF67E6B584C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50856BB3-CD12-4B3D-8DD2-FDF67E6B584C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

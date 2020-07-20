@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.exe
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.deps.json
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.runtimeconfig.json
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.dll
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\bin\Debug\netcoreapp3.1\Bai4.pdb
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.AssemblyInfo.cs
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.dll
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.pdb
+E:\CODEGYM\Module2\Baitapcuoituan\Bai4\obj\Debug\netcoreapp3.1\Bai4.genruntimeconfig.cache

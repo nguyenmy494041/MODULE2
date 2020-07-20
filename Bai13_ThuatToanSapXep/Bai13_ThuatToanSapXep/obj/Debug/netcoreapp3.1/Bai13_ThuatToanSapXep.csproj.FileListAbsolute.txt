@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.exe
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.deps.json
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.runtimeconfig.json
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.dll
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\bin\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.pdb
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.AssemblyInfo.cs
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.dll
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.pdb
+E:\CODEGYM\Module2\Bai13_ThuatToanSapXep\Bai13_ThuatToanSapXep\obj\Debug\netcoreapp3.1\Bai13_ThuatToanSapXep.genruntimeconfig.cache
