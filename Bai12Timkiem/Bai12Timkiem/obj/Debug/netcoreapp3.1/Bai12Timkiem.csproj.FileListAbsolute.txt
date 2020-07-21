@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.exe
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.deps.json
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.runtimeconfig.json
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.dll
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\bin\Debug\netcoreapp3.1\Bai12Timkiem.pdb
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.AssemblyInfo.cs
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.dll
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.pdb
+E:\CODEGYM\Module2\Bai12Timkiem\Bai12Timkiem\obj\Debug\netcoreapp3.1\Bai12Timkiem.genruntimeconfig.cache
