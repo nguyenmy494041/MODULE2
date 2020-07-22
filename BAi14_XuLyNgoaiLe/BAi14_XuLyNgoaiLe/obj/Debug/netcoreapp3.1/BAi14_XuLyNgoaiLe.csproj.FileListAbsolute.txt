@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.exe
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.deps.json
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.runtimeconfig.json
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.dll
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\bin\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.pdb
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.AssemblyInfo.cs
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.dll
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.pdb
+E:\CODEGYM\Module2\BAi14_XuLyNgoaiLe\BAi14_XuLyNgoaiLe\obj\Debug\netcoreapp3.1\BAi14_XuLyNgoaiLe.genruntimeconfig.cache
