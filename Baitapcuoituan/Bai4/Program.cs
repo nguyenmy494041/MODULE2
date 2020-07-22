@@ -54,7 +54,6 @@ namespace Bai4
             {
                 Console.Write($"Input {str}: ");
                 result = int.TryParse(Console.ReadLine(), out number);
-
             } while (!result || number < min || number > max);
             return number;
         }
@@ -136,6 +135,7 @@ namespace Bai4
             else { Console.WriteLine($"{value} is element {result}."); }
 
         }
+       
 
     }
 }

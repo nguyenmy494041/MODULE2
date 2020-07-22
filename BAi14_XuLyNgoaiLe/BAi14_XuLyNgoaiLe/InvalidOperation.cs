@@ -12,11 +12,8 @@ namespace BAi14_XuLyNgoaiLe
                 try
                 {
                     List<Person> listPerson = new List<Person>();
-                    listPerson.Add(new Person("Hoang", 23, true));
-                    listPerson.Add(new Person("Hoang Nam", 21, false));
-                    listPerson.Add(new Person("Huy Hoang", 19, true));
-                    listPerson.Add(new Person("Hoang Thien", 18, false));
-                    for (int i = 0; i < 2; i++)
+             
+                    for (int i = 0; i <20; i++)
                     {
                         listPerson.Remove(listPerson[0]);
                     }
@@ -28,6 +25,7 @@ namespace BAi14_XuLyNgoaiLe
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine("Hoi Den");
                     Console.WriteLine(ex.GetType());
                 }
             }

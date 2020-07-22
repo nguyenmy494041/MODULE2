@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.exe
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.dll
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.AssemblyInfo.cs
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.dll
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.pdb
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.deps.json
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.runtimeconfig.json
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.runtimeconfig.dev.json
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\bin\Debug\netcoreapp3.1\Bai15_DocGhiFile.pdb
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.genruntimeconfig.cache
+E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\obj\Debug\netcoreapp3.1\Bai15_DocGhiFile.csprojAssemblyReference.cache

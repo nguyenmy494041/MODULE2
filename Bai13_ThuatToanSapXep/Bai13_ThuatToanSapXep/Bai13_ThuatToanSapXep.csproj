@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>Bai13_ThuatToanSapXep.SelectionSortAlgorithm</StartupObject>
+	  <StartupObject>Bai13_ThuatToanSapXep.Baitapsapxepnoibot</StartupObject>
   </PropertyGroup>
 
 </Project>
