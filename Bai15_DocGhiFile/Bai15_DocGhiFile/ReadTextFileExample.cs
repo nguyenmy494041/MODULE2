@@ -43,3 +43,22 @@ namespace Bai15_DocGhiFile
         }
     }
 }
+//Directory.CreateDirectory(path);
+//using (StreamWriter sw = File.CreateText(filePath))
+//{
+//    Console.Write("Enter row: ");
+//    int row = int.Parse(Console.ReadLine());
+//    Console.Write("Enter col: ");
+//    int col = int.Parse(Console.ReadLine());
+//    sw.WriteLine($"{row} {col}");
+//    Random rnd = new Random();
+
+//    for (int i = 0; i < row; i++)
+//    {
+//        for (int j = 0; j < col; j++)
+//        {
+//            sw.Write(rnd.Next(10, 80)+ " ");
+//        }
+//        sw.WriteLine();
+//    }
+//}

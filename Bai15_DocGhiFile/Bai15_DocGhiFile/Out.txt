@@ -1,0 +1,2 @@
+The number of even numbers: 15
+Number of numbers is a multiple of 5: 6

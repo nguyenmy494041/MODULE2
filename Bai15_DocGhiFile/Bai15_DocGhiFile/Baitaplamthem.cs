@@ -11,35 +11,64 @@ namespace Bai15_DocGhiFile
         {
             var filePath = @"E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\InputData.txt";
             var path = @"E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\OutputData.txt";
-            //Directory.CreateDirectory(path);
+            using (StreamWriter sw = File.CreateText(filePath))
+            {
+                Console.Write("Enter row: ");
+                int row = int.Parse(Console.ReadLine());
+                Console.Write("Enter col: ");
+                int col = int.Parse(Console.ReadLine());
+                sw.WriteLine($"{row} {col}");
+                Random rnd = new Random();
+
+                for (int i = 0; i < row; i++)
+                {
+                    for (int j = 0; j < col - 1; j++)
+                    {
+                        sw.Write(rnd.Next(10, 80) + " ");
+                        if( j == col - 2)
+                        {
+                            sw.Write(rnd.Next(10, 80));
+                        }
+                    }
+                    sw.WriteLine();
+                }
+            }
+
             List<int> data = ReadRowCol(filePath);           
             int[,] array = ReadArray(data[0], data[1], filePath);
             using (StreamWriter sw = File.CreateText(path))
             {
-                //sw.WriteLine(SumBoundary(array));
-                sw.WriteLine("hhahahah");
-            }
-
-          
+                sw.WriteLine($"Matrix input:");
+                WriteFile(sw, array);
+                int temp = SumArray(array, out int primes, out int odd);
+                sw.WriteLine();
+                sw.WriteLine($"Total force value in the matrix: {SumBoundary(array)}");             
+                sw.WriteLine($"The number of primes in the matrix: {primes}");           
+                sw.WriteLine($"The number of odd numbers in the matrix: {odd}");
+                sw.WriteLine($"The total value on the boundary: {SumBoundary(array)}");
+                sw.WriteLine($"The matrix after the values ​​in the matrix are multiplied by 3: ");
+                WriteFile(sw, MultipliedBy3(array));
+            }          
         }
 
-
-        static void PrintArray(int[,] array)
+        static void WriteFile(StreamWriter sw , int[,] array)
         {
+            
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    Console.Write(array[i, j] + " ");
+                    if (array[i,j] < 100)
+                    {
+                        sw.Write(array[i, j] + "  ");
+                    } else
+                    {
+                        sw.Write(array[i, j] + " ");
+                    }
                 }
-                Console.WriteLine();
+                sw.WriteLine();
             }
-        }
-        static void CreateFile()
-        {
-            var path = @"E:\CODEGYM\Module2\Bai15_DocGhiFile\Bai15_DocGhiFile\OutputData.txt";
-            Directory.CreateDirectory(path);
-        }
+        }     
 
 
         static List<int> ReadRowCol(string filePath)
@@ -147,6 +176,17 @@ namespace Bai15_DocGhiFile
                 Console.WriteLine(e.Message);
             }
             return 0;
+        }
+        static int[,] MultipliedBy3(int[,] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] *= 3;
+                }
+            }
+            return array;
         }
 
 

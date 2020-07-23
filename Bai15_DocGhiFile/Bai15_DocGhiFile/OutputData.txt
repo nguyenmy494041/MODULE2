@@ -1,0 +1,15 @@
+Matrix input:
+58  78  27  33  51  76  26  18  36  
+51  21  69  75  34  74  64  68  54  
+56  29  17  74  57  65  22  67  67  
+35  77  18  24  33  11  35  37  14  
+
+Total force value in the matrix: 915
+The number of primes in the matrix: 6
+The number of odd numbers in the matrix: 19
+The total value on the boundary: 915
+The matrix after the values ​​in the matrix are multiplied by 3: 
+174 234 81  99  153 228 78  54  108 
+153 63  207 225 102 222 192 204 162 
+168 87  51  222 171 195 66  201 201 
+105 231 54  72  99  33  105 111 42  
