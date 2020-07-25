@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.exe
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.AssemblyInfo.cs
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.deps.json
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.runtimeconfig.json
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.runtimeconfig.dev.json
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.dll
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Baitapmodule.pdb
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.csproj.CopyComplete
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.dll
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.pdb
+C:\Users\USER\source\repos\Baitapmodule\Baitapmodule\obj\Debug\netcoreapp3.1\Baitapmodule.genruntimeconfig.cache
