@@ -1,5 +1,5 @@
 {
-  "inputData": [
+  "outputData": [
     [
       {
         "name": "a",
@@ -12,6 +12,10 @@
       {
         "name": "c",
         "score": 14
+      },
+      {
+        "name": "Sum(a, b, c)",
+        "score": 45
       }
     ],
     [
@@ -26,6 +30,10 @@
       {
         "name": "c",
         "score": 56
+      },
+      {
+        "name": "Sum(a, b, c)",
+        "score": 165
       }
     ],
     [
@@ -40,6 +48,10 @@
       {
         "name": "c",
         "score": 99
+      },
+      {
+        "name": "Sum(a, b, c)",
+        "score": 285
       }
     ]
   ]

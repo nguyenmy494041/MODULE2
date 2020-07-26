@@ -1,45 +1,45 @@
 {
-  "inputData": [
+  "outputData": [
     [
       {
         "name": "a",
-        "score": 16
+        "score": 32
       },
       {
         "name": "b",
-        "score": 15
+        "score": 30
       },
       {
         "name": "c",
-        "score": 14
+        "score": 28
       }
     ],
     [
       {
         "name": "a",
-        "score": 54
+        "score": 108
       },
       {
         "name": "b",
-        "score": 55
+        "score": 110
       },
       {
         "name": "c",
-        "score": 56
+        "score": 112
       }
     ],
     [
       {
         "name": "a",
-        "score": 91
+        "score": 182
       },
       {
         "name": "b",
-        "score": 95
+        "score": 190
       },
       {
         "name": "c",
-        "score": 99
+        "score": 198
       }
     ]
   ]

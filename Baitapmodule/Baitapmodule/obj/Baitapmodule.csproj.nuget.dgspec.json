@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj": {}
+    "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj": {
+    "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
+        "projectUniqueName": "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
         "projectName": "Baitapmodule",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
+        "projectPath": "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\obj\\",
+        "outputPath": "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

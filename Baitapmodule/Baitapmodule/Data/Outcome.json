@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "average": 9.6,
+      "rank": "Excellent",
+      "code": "02",
+      "fullname": "Q Giao",
+      "gender": "Female",
+      "subject": [
+        {
+          "name": "Math",
+          "score": 9.9
+        },
+        {
+          "name": "Physical",
+          "score": 9.2
+        },
+        {
+          "name": "Chemistry",
+          "score": 9.4
+        }
+      ]
+    },
+    {
+      "average": 8.15,
+      "rank": "Great",
+      "code": "03",
+      "fullname": "V Minh",
+      "gender": "Male",
+      "subject": [
+        {
+          "name": "Math",
+          "score": 8.4
+        },
+        {
+          "name": "Physical",
+          "score": 8.1
+        },
+        {
+          "name": "Chemistry",
+          "score": 7.7
+        }
+      ]
+    },
+    {
+      "average": 8.13,
+      "rank": "Great",
+      "code": "01",
+      "fullname": "N Hien",
+      "gender": "Female",
+      "subject": [
+        {
+          "name": "Math",
+          "score": 8.1
+        },
+        {
+          "name": "Physical",
+          "score": 7.9
+        },
+        {
+          "name": "Chemistry",
+          "score": 8.4
+        }
+      ]
+    }
+  ]
+}

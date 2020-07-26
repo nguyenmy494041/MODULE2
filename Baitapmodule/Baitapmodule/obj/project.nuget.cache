@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PxFT3KJ6dQIRICNBSPzISCpqYNOkUlKF1uwhDFgsPUyFZ6/mi5eamziIUTHmeuLgkNqyKisBJ4ArdrI4VvyPLA==",
+  "dgSpecHash": "+1jTCkhulCAh+fLpaC18ACyxY4scMvV2OraEDLGFYcvvh7QiOgWTMzeroGIw9t2wVq90cuw0dZWlo/VVoa43rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
+  "projectFilePath": "E:\\CODEGYM\\Module2\\Baitapmodule\\Baitapmodule\\Baitapmodule.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
