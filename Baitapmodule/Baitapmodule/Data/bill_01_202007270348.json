@@ -1,0 +1,27 @@
+{
+  "endtime": "03:48 PM 27/07/2020",
+  "total": 161000,
+  "tableNo": "01",
+  "paid": true,
+  "starttime": "03:46 PM 27/07/2020",
+  "orderdetails": [
+    {
+      "name": "cafe",
+      "count": 3,
+      "price": 15000,
+      "money": 45000
+    },
+    {
+      "name": "milk",
+      "count": 1,
+      "price": 16000,
+      "money": 16000
+    },
+    {
+      "name": "hudar",
+      "count": 10,
+      "price": 10000,
+      "money": 100000
+    }
+  ]
+}
