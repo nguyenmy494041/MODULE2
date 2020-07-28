@@ -1,0 +1,15 @@
+{
+  "endtime": "05:17 PM 27/07/2020",
+  "total": 60000,
+  "tableNo": "1",
+  "paid": true,
+  "starttime": "05:15 PM 27/07/2020",
+  "orderdetails": [
+    {
+      "name": "hot cocoa",
+      "count": 3,
+      "price": 20000,
+      "money": 60000
+    }
+  ]
+}

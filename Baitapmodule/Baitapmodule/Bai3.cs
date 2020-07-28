@@ -15,16 +15,15 @@ namespace Baitapmodule
         {
             string filePath = @"E:\CODEGYM\Module2\Baitapmodule\Baitapmodule\Data\datainput.json";
             var orderData = new OrderData();
-
             int choice = -1;
             while (choice != 3)
             {
                 Console.Clear();
                 Console.WriteLine("select option:");
-                Console.WriteLine("1. goi Manunited.");
-                Console.WriteLine("2.Thanh toan");
+                Console.WriteLine("1. Order.");
+                Console.WriteLine("2. Pay");
                 Console.WriteLine("3. Exit");
-                Console.WriteLine("enter choice:");
+                Console.Write("Enter choice: ");
                 choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {                   
@@ -36,45 +35,24 @@ namespace Baitapmodule
                         break;
                 }
             }
-          
-
-
 
             void Order_Drink_Cakes()
             {
                 getData();
                 int position1;
-                Console.Write("enter number tableNo:");
+                Console.Write("Enter number tableNo: ");
                 string tableNo1 = Console.ReadLine();
                 if (FindTable(orderData, tableNo1, out position1) != null)
                 {
                     using (StreamWriter sw = File.CreateText(filePath))
                     {
-                        bool result; int num1, num2;
+                       
                         Console.Clear();
-                        Console.WriteLine("goi them mon: ");
+                        Console.WriteLine("Order more: ");
                         string key = "Y";
                         do
                         {
-                            OrderDetail orderDetail = new OrderDetail();
-                            Console.Write("Input name order: ");
-                            orderDetail.name = Console.ReadLine();
-                            do
-                            {
-                                Console.Write("Input number amount: ");
-                                result = int.TryParse(Console.ReadLine(), out num1);
-
-                            } while (!result || num1 <= 0 || num1 > 100);
-
-                            orderDetail.count = num1;
-                            do
-                            {
-                                Console.Write("Input price: ");
-                                result = int.TryParse(Console.ReadLine(), out num2);
-
-                            } while (!result || num2 <= 0);
-
-                            orderDetail.price = num2;
+                            OrderDetail orderDetail = ListManu();
                             orderData.orders[position1].orderdetails.Add(orderDetail);
                             Console.Write("Press N to exit: ");
                             key = Console.ReadLine();
@@ -84,17 +62,19 @@ namespace Baitapmodule
                         sw.Write(setdata);
 
                     }
-                    Console.WriteLine("Da them vao");
+                    Console.WriteLine("Added");
+                    Console.ReadKey();
                 }
                 else
                 {
-                    Console.WriteLine("Tao cho ban moi");
+                    Console.WriteLine("Create new table");
                     using (StreamWriter sw = File.CreateText(filePath))
                     {
                         orderData.orders.Add(CreateData());
                         var datainput = JsonConvert.SerializeObject(orderData);
                         sw.Write(datainput);
                     }
+                    Console.ReadKey();
                 }
 
             }
@@ -102,7 +82,7 @@ namespace Baitapmodule
             {
                 getData();
                 int position;
-                Console.Write("enter number tableNo:");
+                Console.Write("Enter number tableNo: ");
                 string tableNo = Console.ReadLine();
                 if (FindTable(orderData, tableNo, out position) != null)
                 {
@@ -113,11 +93,13 @@ namespace Baitapmodule
                         var setdata = JsonConvert.SerializeObject(orderData);
                         sw.Write(setdata);
                     }
-                    Console.WriteLine("DA Thanh Toan");
+                    Console.WriteLine("Paid");
+                    Console.ReadKey();
                 }
                 else
                 {
-                    Console.WriteLine("hhhhhhhhhhh");
+                    Console.WriteLine("Have been paid");
+                    Console.ReadKey();
                 }
             }
             Order FindTable(OrderData orderData, string tableNo, out int position)
@@ -201,8 +183,7 @@ namespace Baitapmodule
 
         static Order CreateData()
         {
-            //OrderData orderData = new OrderData();
-            bool result; int num, num1, num2;
+            bool result; int num;
             Order order = new Order();
             do
             {
@@ -211,42 +192,89 @@ namespace Baitapmodule
 
             } while (!result || num <= 0 || num > 30);
 
-            order.tableNo = $"0{num}";
+            order.tableNo = $"{num}";
             order.paid = false;
             order.starttime = DateTime.Now.ToString("hh:mm tt dd/MM/yyyy");
             string key = "Y";
             do
             {
-                OrderDetail orderDetail = new OrderDetail();
-                Console.Write("Input name order: ");
-                orderDetail.name = Console.ReadLine();
-                do
-                {
-                    Console.Write("Input number amount: ");
-                    result = int.TryParse(Console.ReadLine(), out num1);
-
-                } while (!result || num1 <= 0 || num1 > 100);
-
-                orderDetail.count = num1;
-                do
-                {
-                    Console.Write("Input price: ");
-                    result = int.TryParse(Console.ReadLine(), out num2);
-
-                } while (!result || num2 <= 0);
-
-                orderDetail.price = num2;
+                OrderDetail orderDetail = ListManu();
                 order.orderdetails.Add(orderDetail);
                 Console.Write("Press N to exit: ");
                 key = Console.ReadLine();
             }
-            while (string.Compare(key.ToUpper(), "N") != 0);
-
-            //orderData.orders.Add(order);
+            while (string.Compare(key.ToUpper(), "N") != 0);      
 
             return order;
         }
+        static int Mount()
+        {
+            bool result; int num1;
+            do
+            {
+                Console.Write("Input number amount: ");
+                result = int.TryParse(Console.ReadLine(), out num1);
+                Console.WriteLine();
 
+            } while (!result || num1 <= 0 || num1 > 100);
+
+            return num1;
+        }
+        static OrderDetail ListManu()
+        {
+            OrderDetail orderDetail = new OrderDetail();
+            int choice = 0;
+            while (choice == 0)
+            {
+                Console.WriteLine("Choose a drink or cake: ");
+                Console.WriteLine(" 1. Black Coffee \n 2. Milk Coffee \n 3. Lemon Fruit \n 4. Bread \n" +
+                    " 5. hot cocoa \n 6. Orange juice \n 7. Cocacola \n 8. Nuti");
+                bool result; int num;
+                do
+                {
+                    Console.Write("Enter choice: ");
+                    result = int.TryParse(Console.ReadLine(), out num);
+                } while (!result || num <= 0||num >8);
+                choice = num;                
+                switch (choice)
+                {
+                    case 1:
+                        orderDetail.name = "Black Coffee";
+                        orderDetail.price = 12000;                     
+                        break;
+                    case 2:
+                        orderDetail.name = "Milk Coffee";
+                        orderDetail.price = 16000;
+                        break;
+                    case 3:
+                        orderDetail.name = "Lemon Fruit";
+                        orderDetail.price = 15000;
+                        break;
+                    case 4:
+                        orderDetail.name = "Bread";
+                        orderDetail.price = 10000;
+                        break;
+                    case 5:
+                        orderDetail.name = "hot cocoa";
+                        orderDetail.price = 20000;
+                        break;
+                    case 6:
+                        orderDetail.name = "Orange juice";
+                        orderDetail.price = 25000;
+                        break;
+                    case 7:
+                        orderDetail.name = "Cocacola";
+                        orderDetail.price = 12000;
+                        break;
+                    case 8:
+                        orderDetail.name = "Nuti";
+                        orderDetail.price = 14000;
+                        break;
+                }
+                orderDetail.count = Mount();               
+            }
+            return orderDetail;            
+        }
     }
     class OrderData
     {

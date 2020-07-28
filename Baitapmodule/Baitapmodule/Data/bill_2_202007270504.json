@@ -1,0 +1,15 @@
+{
+  "endtime": "05:04 PM 27/07/2020",
+  "total": 30000,
+  "tableNo": "2",
+  "paid": true,
+  "starttime": "05:03 PM 27/07/2020",
+  "orderdetails": [
+    {
+      "name": "Lemon Fruit",
+      "count": 2,
+      "price": 15000,
+      "money": 30000
+    }
+  ]
+}
