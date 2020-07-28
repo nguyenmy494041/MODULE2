@@ -1,0 +1,27 @@
+{
+  "total": 1920000,
+  "Payment_Time": "03:34 PM 28/07/2020",
+  "carts": [
+    {
+      "idItem": 6,
+      "nameItem": "Radiator fan     ",
+      "priceItem": 80000,
+      "quantityItem": 7,
+      "money": 560000
+    },
+    {
+      "idItem": 4,
+      "nameItem": "Wireless mouse   ",
+      "priceItem": 220000,
+      "quantityItem": 3,
+      "money": 660000
+    },
+    {
+      "idItem": 2,
+      "nameItem": "Calculator       ",
+      "priceItem": 350000,
+      "quantityItem": 2,
+      "money": 700000
+    }
+  ]
+}

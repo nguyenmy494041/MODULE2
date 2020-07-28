@@ -27,66 +27,99 @@ namespace Baitapmodule.Bai4
                 switch (choice)
                 {
                     case 1:
-                        AddItems(cart);
+                        AddItems(cart);                     
                         break;
                     case 2:
-                        UpdateItems(cart);
+                        UpdateItems(cart);                       
                         break;
                     case 3:
-                        RemoveItems(cart);
+                        RemoveItems(cart);                       
                         break;
                     case 4:
-                        ShowCart(cart);
+                        ShowCart(cart);                       
                         break;
                     case 5:
-                        Pay(cart);
-                        break;
-                       
+                        Pay(cart);                       
+                        break;                       
                 }
                 Console.ReadKey();
-            }
-            
+            }            
         }
 
         public static void Pay(Cart cart) 
         {
-            string fileName = $@"Pay__{DateTime.Now.ToString("yyyyMMddhhmm")}.json";
-            var outFilePath = $@"E:\CODEGYM\Module2\Baitapmodule\Baitapmodule\Bai4\{fileName}";
-            var data = new closeTheOrder();
-            foreach (var item in cart.carts)
+            if (cart.carts.Count > 0)
             {
-                data.carts.Add(new Items()
+                string fileName = $@"Pay__{DateTime.Now.ToString("yyyyMMddhhmm")}.json";
+                var outFilePath = $@"E:\CODEGYM\Module2\Baitapmodule\Baitapmodule\Bai4\{fileName}";
+                var data = new closeTheOrder();
+                foreach (var item in cart.carts)
                 {
-                    idItem = item.idItem,
-                    nameItem = item.nameItem,
-                    priceItem = item.priceItem,
-                    quantityItem = item.quantityItem
-                }) ;
+                    data.carts.Add(new Items()
+                    {
+                        idItem = item.idItem,
+                        nameItem = item.nameItem,
+                        priceItem = item.priceItem,
+                        quantityItem = item.quantityItem,
+                        money = item.Sum()
+                    }) ;
+                }
+                using (StreamWriter sw = File.CreateText(outFilePath))
+                {
+                    var dataPay = JsonConvert.SerializeObject(data);
+                    sw.Write(dataPay);
+                }
+                cart.carts.Clear();
+                Console.WriteLine("Payment success");
             }
-            
-            using (StreamWriter sw = File.CreateText(outFilePath))
-            {
-                var dataPay = JsonConvert.SerializeObject(data);
-                sw.Write(dataPay);
-            }
-            cart.carts.Clear();
+            else { Console.WriteLine("Cart nothing"); }
         }
         public static void UpdateItems(Cart cart)
         {
-            int iditem = CreateInteger("Iditem", 1, 100);
-            int index = FindIndex(cart, iditem);
-            int quantity = CreateInteger("quantity of product idtem: ", 1, 100);
-            cart.carts[index].quantityItem = quantity;
+            try
+            {
+                int iditem = CreateInteger("Iditem", 1, 100);
+                int index = FindIndex(cart, iditem);
+                int quantity = CreateInteger("quantity of product idtem: ", 1, 100);
+                if(index != -1)
+                { 
+                    cart.carts[index].quantityItem = quantity;
+                    Console.WriteLine("Fixed purchase information");
+                }
+                else
+                {
+                    Console.WriteLine("The product is not in the cart");
+                }               
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }            
         }
         public static void RemoveItems(Cart cart)
         {
-            int iditem = CreateInteger("Iditem", 1, 100);
-            int index = FindIndex(cart, iditem);
-            cart.carts.RemoveAt(index);            
+            try
+            {
+                int iditem = CreateInteger("Iditem", 1, 100);
+                int index = FindIndex(cart, iditem);
+                if (index != -1)
+                {
+                    cart.carts.RemoveAt(index);
+                    Console.WriteLine("Product deleted");
+                }
+                else
+                {
+                    Console.WriteLine("The product is not in the cart");
+                }               
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message); 
+            }               
         }
         public static void ShowCart(Cart cart)
         {
-            Console.WriteLine($"idItem\t\tnameItem\t\tpriceItem\t\tquantityItem");
+            Console.WriteLine($"idItem\t\tnameItem\t\tpriceItem\tquantityItem");
             foreach (var item in cart.carts)
             {
                 Console.WriteLine(item.ToString());
@@ -95,30 +128,37 @@ namespace Baitapmodule.Bai4
         }
         public static void AddItems(Cart cart)
         {
-            Items items = ChooseProduct(out int id);
-            if (cart.carts.Count == 0)
+            try
             {
-                items.idItem = id;
-                cart.carts.Add(items);
-            }
-            else
-            {
-                for (int j = 0; j <  cart.carts.Count;j++)
+                Items items = ChooseProduct(out int id);
+                if (cart.carts.Count == 0)
                 {
-                    if (cart.carts[j].nameItem == items.nameItem)
-                    {
-                        cart.carts[j].quantityItem += items.quantityItem;
-                        break;
-                    }
-                    if (j == cart.carts.Count-1)
-                    {
-                        items.idItem = id;
-                        cart.carts.Add(items);
-                        break;
-                    }
-                    
+                    items.idItem = id;
+                    cart.carts.Add(items);
                 }
+                else
+                {
+                    for (int j = 0; j < cart.carts.Count; j++)
+                    {
+                        if (cart.carts[j].nameItem == items.nameItem)
+                        {
+                            cart.carts[j].quantityItem += items.quantityItem;
+                            break;
+                        }
+                        if (j == cart.carts.Count - 1)
+                        {
+                            items.idItem = id;
+                            cart.carts.Add(items);
+                            break;
+                        }
+                    }
+                }
+                Console.WriteLine("Added");
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }           
             
         }
         public static Items ChooseProduct(out int id)
@@ -149,7 +189,6 @@ namespace Baitapmodule.Bai4
             } while (!result || num < 1 || num > 30);
             items.quantityItem = num;
             return items;      
-          
         }
         public static void ShowItems()
         {
@@ -159,11 +198,10 @@ namespace Baitapmodule.Bai4
             {
                 Console.WriteLine($"{i+1}. {products[i].ToString()}");
             }
-
         }
         public static List<Product> CreateItems()
         {
-            List<string> nameproduct = new List<string> { "Instruction book", "Calculator", "Bluetooth speaker", "Wireless mouse", "Keyboard", "Radiator fan" };
+            List<string> nameproduct = new List<string> { "Instruction book ", "Calculator       ", "Bluetooth speaker", "Wireless mouse   ", "Keyboard         ", "Radiator fan     " };
             List<long> priceproduct = new List<long> { 46000, 350000, 150000, 220000, 120000, 80000 };
             List<Product> products = new List<Product>();
             for (int i = 0; i < nameproduct.Count; i++)
@@ -185,7 +223,6 @@ namespace Baitapmodule.Bai4
             } while (!result || num < min||num > max);
 
             return num;
-
         }
         public static int FindIndex(Cart cart,int iditem)
         {
@@ -198,8 +235,6 @@ namespace Baitapmodule.Bai4
             }
             return -1;
         }
-
-
     }
     public class Cart
     {
@@ -215,13 +250,18 @@ namespace Baitapmodule.Bai4
         public string nameItem { get; set; }
         public long priceItem { get; set; }
         public int quantityItem { get; set; }
+        public long money { get; set; }
         public Items()
         {
 
         }
         public override string ToString()
         {
-            return $"{idItem}\t\t{nameItem}\t\t{priceItem}\t\t{quantityItem}";
+            return $"{idItem}\t\t{nameItem}\t{priceItem}\t\t{quantityItem}";
+        } 
+        public long Sum()
+        {
+            return priceItem * quantityItem;
         }
     }
     public class Product
@@ -230,7 +270,7 @@ namespace Baitapmodule.Bai4
         public long price { get; set; }
         public override string ToString()
         {
-            return $"{name},   price: {price}VND";
+            return $"{name}   price: {price}VND";
         }
     }
     public class closeTheOrder : Cart
