@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Baitapmodule.Bai4
@@ -28,13 +30,16 @@ namespace Baitapmodule.Bai4
                         AddItems(cart);
                         break;
                     case 2:
+                        UpdateItems(cart);
                         break;
                     case 3:
+                        RemoveItems(cart);
                         break;
                     case 4:
                         ShowCart(cart);
                         break;
                     case 5:
+                        Pay(cart);
                         break;
                        
                 }
@@ -43,30 +48,41 @@ namespace Baitapmodule.Bai4
             
         }
 
+        public static void Pay(Cart cart) 
+        {
+            string fileName = $@"Pay__{DateTime.Now.ToString("yyyyMMddhhmm")}.json";
+            var outFilePath = $@"E:\CODEGYM\Module2\Baitapmodule\Baitapmodule\Bai4\{fileName}";
+            var data = new closeTheOrder();
+            foreach (var item in cart.carts)
+            {
+                data.carts.Add(new Items()
+                {
+                    idItem = item.idItem,
+                    nameItem = item.nameItem,
+                    priceItem = item.priceItem,
+                    quantityItem = item.quantityItem
+                }) ;
+            }
+            
+            using (StreamWriter sw = File.CreateText(outFilePath))
+            {
+                var dataPay = JsonConvert.SerializeObject(data);
+                sw.Write(dataPay);
+            }
+            cart.carts.Clear();
+        }
         public static void UpdateItems(Cart cart)
         {
             int iditem = CreateInteger("Iditem", 1, 100);
-            int price = CreateInteger("quantity of product idtem: ", 1, 100);
-            foreach (var item in cart.carts)
-            {
-                if (item.idItem == iditem)
-                {
-                    cart.carts[iditem].quantityItem = price;
-                    break;
-                }
-            }
+            int index = FindIndex(cart, iditem);
+            int quantity = CreateInteger("quantity of product idtem: ", 1, 100);
+            cart.carts[index].quantityItem = quantity;
         }
         public static void RemoveItems(Cart cart)
         {
             int iditem = CreateInteger("Iditem", 1, 100);
-            foreach (var item in cart.carts)
-            {
-                if(item.idItem == iditem)
-                {
-                    cart.carts.Remove(item);
-                    break;
-                }
-            }             
+            int index = FindIndex(cart, iditem);
+            cart.carts.RemoveAt(index);            
         }
         public static void ShowCart(Cart cart)
         {
@@ -79,10 +95,10 @@ namespace Baitapmodule.Bai4
         }
         public static void AddItems(Cart cart)
         {
-            Items items = ChooseProduct();
+            Items items = ChooseProduct(out int id);
             if (cart.carts.Count == 0)
             {
-                items.idItem = cart.carts.Count + 1;
+                items.idItem = id;
                 cart.carts.Add(items);
             }
             else
@@ -96,7 +112,7 @@ namespace Baitapmodule.Bai4
                     }
                     if (j == cart.carts.Count-1)
                     {
-                        items.idItem = cart.carts.Count + 1;
+                        items.idItem = id;
                         cart.carts.Add(items);
                         break;
                     }
@@ -105,7 +121,7 @@ namespace Baitapmodule.Bai4
             }
             
         }
-        public static Items ChooseProduct()
+        public static Items ChooseProduct(out int id)
         {
             bool result; int num;
             List<Product> products = CreateItems();
@@ -116,7 +132,7 @@ namespace Baitapmodule.Bai4
                 Console.Write("Enter to select from 1 to 6: ");
                 result = int.TryParse(Console.ReadLine(), out num);
             } while (!result || num <1 || num > 6);
-          
+            id = num;
             for (int i = 0; i < products.Count; i++)
             {
                 if (i == num - 1)
@@ -171,6 +187,17 @@ namespace Baitapmodule.Bai4
             return num;
 
         }
+        public static int FindIndex(Cart cart,int iditem)
+        {
+           for (int i = 0; i < cart.carts.Count; i++)
+            {
+                if (cart.carts[i].idItem == iditem)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
 
     }
@@ -208,8 +235,12 @@ namespace Baitapmodule.Bai4
     }
     public class closeTheOrder : Cart
     {
-
+        public closeTheOrder()
+        {
+            carts = new List<Items>();
+        }
         public long total => Sumprice();
+        public string Payment_Time => DateTime.Now.ToString("hh:mm tt dd/MM/yyyy");
         public long Sumprice()
         {
             long sum = 0;
