@@ -1,0 +1,13 @@
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.exe
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.deps.json
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.runtimeconfig.json
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.runtimeconfig.dev.json
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.dll
+E:\CODEGYM\Module2\ListOrder\ListOrder\bin\Debug\netcoreapp3.1\ListOrder.pdb
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.AssemblyInfo.cs
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.dll
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.pdb
+E:\CODEGYM\Module2\ListOrder\ListOrder\obj\Debug\netcoreapp3.1\ListOrder.genruntimeconfig.cache
