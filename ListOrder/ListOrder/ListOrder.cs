@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using static ListOrder.Orders;
+using Newtonsoft.Json;
 
 namespace ListOrder
 {
@@ -8,7 +10,9 @@ namespace ListOrder
     {
         public static Customer customer = new Customer();
         public static  int id = 0;
-       
+
+        public static object JsonConvert { get; private set; }
+
         static void Main(string[] args)
         {
             int choose = -2;
@@ -20,8 +24,9 @@ namespace ListOrder
                 Console.WriteLine("3. Show order");
                 Console.WriteLine("4. Find order by id");
                 Console.WriteLine("5. Find order by name");
+                Console.WriteLine("6. Pay order");
                 Console.WriteLine("0. Exit");
-                choose = Int.CreateInteger("choose", 0, 5);
+                choose = Int.CreateInteger("choose", 0, 6);
                 switch (choose)
                 {
                     case 1:
@@ -39,6 +44,9 @@ namespace ListOrder
                     case 5:
                         FindOrderByNameCustomer();
                         break;
+                    case 6: PayOrder(); 
+                        break;
+
                 }
                 Console.ReadKey();
             }
@@ -253,19 +261,37 @@ namespace ListOrder
             if (count == 0) Console.WriteLine("Not found !");
             
         }
-        //static void PayOrder()
-        //{
-        //    int idorder = Int.CreateInteger("id order", 1);
-        //    int pos = FindByIdCustomer(idorder);
-        //    if (pos != -1)
-        //    {
-        //        if (customer.listorder[pos].status == "Order")
-        //        {
-        //            customer.listorder[pos].status = "Payed";
-        //            var data = customer.listorder[pos];
-        //            string fileName = $@"Pay__{DateTime.Now.ToString("yyyyMMddhhmm")}.json";
-        //        }
-        //    }
-        //}
+        static void PayOrder()
+        {
+            var outfilePath = $@"E:\CODEGYM\Module2\ListOrder\ListOrder\Pay";
+            string fileName = $@"Pay__{DateTime.Now.ToString("yyyyMMddhhmm")}.json";
+            int idorder = Int.CreateInteger("id order", 1);
+            int pos = FindByIdCustomer(idorder);
+            if (pos != -1)
+            {
+                if (customer.listorder[pos].status == "Order")
+                {
+                    customer.listorder[pos].status = "Payed";
+
+                    using (StreamWriter sw = File.CreateText($@"{outfilePath}\{fileName}"))
+                    {
+                        var data = customer.listorder[pos];
+                        sw.Write(data);
+                    }
+
+                }
+                else Console.WriteLine("Order was payed!");
+            }
+            else Console.WriteLine("Not found order!");
+        }
+        static void WriteDATA()
+        {
+            var outfilePath = $@"E:\CODEGYM\Module2\ListOrder\ListOrder\DATA\input.json";
+            using (StreamWriter sw = File.CreateText(outfilePath))
+            {
+               
+                
+            }
+        }
     }
 }

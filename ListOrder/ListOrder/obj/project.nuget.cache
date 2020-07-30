@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RvG6bu5bMubF7xW+nDksABjB3eNxsn8wvwD6duVFx4zY29UnhSbBuHbvFFMsphGlcY1LV0rNJpkAs9EFWK0Dnw==",
+  "dgSpecHash": "2lG2bJsI150PGv5FHnPCleWd+0QZadpsby5PWRaKOgUvOEz9EWUrXiRQ3N6/1HR+HblYFWiCLU7Rlpw++6AQDA==",
   "success": true,
   "projectFilePath": "E:\\CODEGYM\\Module2\\ListOrder\\ListOrder\\ListOrder.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
