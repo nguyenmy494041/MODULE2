@@ -1,0 +1,15 @@
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.exe
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.deps.json
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.runtimeconfig.json
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.dll
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\BaitapModule2_lan2.pdb
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.AssemblyInfo.cs
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.dll
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.pdb
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.genruntimeconfig.cache
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\obj\Debug\netcoreapp3.1\BaitapModule2_lan2.csproj.CopyComplete

@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "user_id": 1,
+      "user_name": "Chicharito",
+      "user_mail": "hatdaunho@gmail.com",
+      "user_password": "hatdaunho",
+      "Isadmin": true
+    }
+  ],
+  "custumers": [
+    {
+      "id_custumer": 1,
+      "name_custumer": "Satthuvongcam",
+      "adress_custumer": "ThanhphoHue",
+      "number_phone": "0909456789",
+      "oders": [
+        {
+          "OrderItem": 1,
+          "OrderId": 11,
+          "timeOrder": "09:30 PM 31/07/2020",
+          "status": "Waiting",
+          "products": [
+            {
+              "code_product": "MA23",
+              "name_product": "Chuot khong day",
+              "price_product": 135000,
+              "quantity_product": 10,
+              "pay_money": 1350000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ru6E/7j4qBCsidx6y0AYXS7h2JmRpIPUpUl7m70Xb9DzDuA9elVQP/B3xTvyPGjdwl3TWdU8hKvPLyQ54bq8kA==",
+  "success": true,
+  "projectFilePath": "E:\\CODEGYM\\Module2\\BaitapModule2_lan2\\BaitapModule2_lan2\\BaitapModule2_lan2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

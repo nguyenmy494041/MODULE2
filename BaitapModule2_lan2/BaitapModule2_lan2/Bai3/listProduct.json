@@ -1,0 +1,11 @@
+{
+  "listProduct": [
+    {
+      "code_product": "MA23",
+      "name_product": "Chuot khong day",
+      "price_product": 135000,
+      "quantity_product": 0,
+      "pay_money": 0
+    }
+  ]
+}
