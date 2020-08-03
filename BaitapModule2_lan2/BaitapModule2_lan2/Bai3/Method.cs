@@ -518,6 +518,82 @@ namespace BaitapModule2_lan2.Bai3
            
 
         }
-        
+        public static void ShowAllOrderByCustumer(int id_Custumer)
+        {
+            Method.ReadOnMember();
+            int index = -1;
+            for (int i = 0; i < data.custumers.Count; i++)
+            {
+                if(data.custumers[i].id_custumer == id_Custumer)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            if(index!= -1)
+            {
+                Console.WriteLine($"Custumer: {data.custumers[index].name_custumer}");
+                Console.WriteLine($"Adress: {data.custumers[index].adress_custumer}\n");
+                foreach (var oder in data.custumers[index].oders)
+                {
+                    Console.WriteLine($"\tOrder Id: {oder.OrderId}");
+                    Console.WriteLine($"\tTime order: {oder.timeOrder}");
+                    Console.WriteLine($"\tStatus: {oder.status}\n");
+                    Console.WriteLine($"\tCode\tName product\t\tprice\t\tquantity\tmoney");
+                    foreach (var pro in oder.products)
+                    {
+                        Console.WriteLine($"\t{pro.code_product}\t{pro.name_product}\t\t{pro.price_product}\t\t{pro.quantity_product}\t\t{pro.pay_money}");
+                    }
+                    Console.WriteLine("\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Not found !");
+            }
+           
+        }
+        public static void FindOrderOFCustumer(int id_Custumer)
+        {
+            Method.ReadOnMember();
+            int index = -1, pos = -1;
+            for (int i = 0; i < data.custumers.Count; i++)
+            {
+                if (data.custumers[i].id_custumer == id_Custumer)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            int idorder = Management.CreateInteger("id order", 1);
+            for (int i = 0; i < data.custumers[index].oders.Count; i++)
+            {
+                if (data.custumers[index].oders[i].OrderId == idorder)
+                {
+                    pos = i;
+                    break;
+                }
+            }
+            if (pos != -1)
+            {
+                Console.WriteLine($"\nId Order: {idorder}");
+                Console.WriteLine($"Custumer: {data.custumers[index].name_custumer}");
+                Console.WriteLine($"Adress: {data.custumers[index].adress_custumer}");
+                Console.WriteLine($"Phone: {data.custumers[index].number_phone}");
+                Console.WriteLine($"Time order: {data.custumers[index].oders[pos].timeOrder}");
+                Console.WriteLine($"Status: {data.custumers[index].oders[pos].status}\n");
+                Console.WriteLine($"Code\tName product\t\tprice\t\tquantity\tmoney");
+                foreach (var pro in data.custumers[index].oders[pos].products)
+                {
+                    Console.WriteLine($"{pro.code_product}\t{pro.name_product}\t\t{pro.price_product}\t\t{pro.quantity_product}\t\t{pro.pay_money}");
+                }
+                Console.WriteLine("\n");
+            }
+            else
+            {
+                Console.WriteLine("Not found Order!");
+            }
+
+        }
     }
 }

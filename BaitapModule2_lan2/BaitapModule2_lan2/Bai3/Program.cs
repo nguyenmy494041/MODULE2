@@ -249,11 +249,11 @@ namespace BaitapModule2_lan2.Bai3
                         Management.CreateNewOder(id_Custumer);
                         break;
                     case 3:
-                        
+                        Method.ShowAllOrderByCustumer(id_Custumer);
                         break;
                     case 4:
-                        break;
-                 
+                        Method.FindOrderOFCustumer(id_Custumer);
+                        break;                 
                     case 5:                       
                         Console.WriteLine("Logged out\n");
                         TakeAction();
