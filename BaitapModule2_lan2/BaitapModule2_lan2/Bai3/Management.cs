@@ -6,15 +6,15 @@ using System.Text;
 
 namespace BaitapModule2_lan2.Bai3
 {
-    class Yield
+    class Management
     {
         public List<Product> listProduct { get; set; }
-        public Yield()
+        public Management()
         {
             listProduct = new List<Product>();
         }
-        public static DATA data = new DATA();
-        public static Yield yield = new Yield();
+        
+        public static Management management = new Management();
         // tao moi 1 san pham
         public static Product CreateProduct()
         {
@@ -41,7 +41,7 @@ namespace BaitapModule2_lan2.Bai3
             string path = $@"E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\Bai3\listProduct.json";
             using (StreamWriter sw = File.CreateText(path))
             {
-                var data = JsonConvert.SerializeObject(yield);
+                var data = JsonConvert.SerializeObject(management);
                 sw.Write(data);
             }
         }
@@ -52,19 +52,20 @@ namespace BaitapModule2_lan2.Bai3
             using (StreamReader sr = File.OpenText(path))
             {
                 var data = sr.ReadToEnd();
-                yield = JsonConvert.DeserializeObject<Yield>(data);
+                management = JsonConvert.DeserializeObject<Management>(data);
             }
         }
         // them san pham vao danh sach
         public static void AddProduct()
         {
-            Yield.ReadProduct();
-            Product product = Yield.CreateProduct();
-            int pos = Yield.Find(product.code_product);
+            Management.ReadProduct();
+            Product product = Management.CreateProduct();
+            int pos = Management.Find(product.code_product);
             if (pos == -1)
             {
-                yield.listProduct.Add(product);
-                Yield.PushProduct();
+                management.listProduct.Add(product);
+                Management.PushProduct();
+                Console.WriteLine("Added");
             }
             else
             {
@@ -74,9 +75,9 @@ namespace BaitapModule2_lan2.Bai3
         // kiem tra xem san pham da co trong danh sach chua, neu co tra ve vi tri
         public static int Find(string code_product)
         {
-            for (int i = 0; i < yield.listProduct.Count; i++)
+            for (int i = 0; i < management.listProduct.Count; i++)
             {
-                if (yield.listProduct[i].code_product == code_product)
+                if (management.listProduct[i].code_product == code_product)
                 {
                     return i;
                 }
@@ -86,10 +87,10 @@ namespace BaitapModule2_lan2.Bai3
         // thay doi gia cua san pham
         public static void UpdateProduct()
         {
-            Yield.ReadProduct();
+            Management.ReadProduct();
             Console.Write("Enter id Product: ");
             string code = Console.ReadLine();
-            int pos = Yield.Find(code);
+            int pos = Management.Find(code);
 
             if (pos != -1)
             {
@@ -102,8 +103,9 @@ namespace BaitapModule2_lan2.Bai3
                     Console.Write("Enter again new price Product: ");
                     price = Console.ReadLine();
                 }
-                yield.listProduct[pos].price_product = kq;
-                Yield.PushProduct();
+                management.listProduct[pos].price_product = kq;
+                Management.PushProduct();
+                Console.WriteLine("Fixed purchase information");
             }
             else
             {
@@ -114,93 +116,50 @@ namespace BaitapModule2_lan2.Bai3
         // xoa san pham ra khoi danh sach
         public static void RemoveProduct()
         {
-            Yield.ReadProduct();
+            Management.ReadProduct();
             Console.Write("Enter id Product: ");
             string id = Console.ReadLine();
-            int pos = Yield.Find(id);
+            int pos = Management.Find(id);
             if (pos != -1)
             {
-                yield.listProduct.RemoveAt(pos);
-                Yield.PushProduct();
+                management.listProduct.RemoveAt(pos);
+                Management.PushProduct();
+                Console.WriteLine("Product deleted");
             }
             else { Console.WriteLine($"\nProduct not exit!"); }
         }
         // show san pham
         public static void ShowProduct()
         {
-            Yield.ReadProduct();
+            Management.ReadProduct();
             Console.WriteLine("\tCode\tName product\t\tPrice");
-            for(int i = 0; i < yield.listProduct.Count; i++)
+            for(int i = 0; i < management.listProduct.Count; i++)
             {
-                Console.WriteLine($"{i+1}\t{yield.listProduct[i].OutString()}");
+                Console.WriteLine($"{i+1}\t{management.listProduct[i].OutString()}");
             }
         }
         // tim san pham
         public static void FindProduct()
         {
-            Yield.ReadProduct();
+            Management.ReadProduct();
             Console.Write("Enter id Product: ");
             string id = Console.ReadLine();
-            int pos = Yield.Find(id);
+            int pos = Management.Find(id);
             if (pos != -1)
             {
                 Console.WriteLine("Code\tName product\t\tPrice");
-                Console.WriteLine(yield.listProduct[pos].OutString());
+                Console.WriteLine(management.listProduct[pos].OutString());
             }
 
         }
         // quan ly tat ca cac mat hang
-        public static void AdministrationItems()
-        {
-            int choose = -1;
-            while (choose != 0)
-            {
-                Console.WriteLine("Administration of all items.");
-                Console.WriteLine("1. Show Product");
-                Console.WriteLine("2. Add product.");
-                Console.WriteLine("3. Update product.");
-                Console.WriteLine("4. Delete product");
-                Console.WriteLine("5. Find product by codeProduct");
-                Console.WriteLine("0. Exit");
-                Console.Write("\nEnter choose: ");
-                string str = Console.ReadLine();
-                int num;
-                bool result = int.TryParse(str, out num);
-                while (!result || num < 0 || num > 5)
-                {
-                    Console.Write(" Enter choose from 0 to 5: ");
-                    str = Console.ReadLine();                    
-                    result = int.TryParse(str, out num);
-                }
-                choose = num;
-                switch (choose)
-                {
-                    case 1:
-                        ShowProduct();
-                        break;
-                    case 2:
-                        AddProduct();
-                        break;
-                    case 3:
-                        UpdateProduct();
-                        break;
-                    case 4:
-                        RemoveProduct();
-                        break;
-                    case 5:
-                        FindProduct();
-                        break;
-                }
-                Console.ReadKey();
-
-            }
-        }
+       
         // tao don hang
         public static void CreateNewOder(int id_Custumer)
         {
             Oder oder = new Oder();
             Method.ReadOnMember();
-            int pos_Custumer = Yield.FindIndexOfIdCustumer(id_Custumer);
+            int pos_Custumer = Management.FindIndexOfIdCustumer(id_Custumer);
             if (pos_Custumer != -1)
             {
                 if (Method.data.custumers[pos_Custumer].oders.Count == 0)
@@ -226,32 +185,39 @@ namespace BaitapModule2_lan2.Bai3
                 {
                     Product product = new Product();
                     Console.WriteLine("Product list in store");
-                    Yield.ShowProduct();
+                    Management.ShowProduct();
                     Console.Write("\nEnter the Code to select the product: ");
                     string code = Console.ReadLine();
-                    int pos = Yield.Find(code);
+                    int pos = Management.Find(code);
                     while (pos == -1)
                     {
                         Console.Write("\nNot found! Enter again the Code to select the product: ");
                         code = Console.ReadLine();
-                        pos = Yield.Find(code);
+                        pos = Management.Find(code);
                     }
                     product.code_product = code;
-                    product.name_product = yield.listProduct[pos].name_product;
-                    product.price_product = yield.listProduct[pos].price_product;
-                    product.quantity_product = Yield.CreateInteger("quantity", 1, 10000);
+                    product.name_product = management.listProduct[pos].name_product;
+                    product.price_product = management.listProduct[pos].price_product;
+                    product.quantity_product = Management.CreateInteger("quantity", 1, 10000);
+                    int j;
                     if (oder.products.Count == 0) 
                     { 
                         oder.products.Add(product); 
                     }
                     else
                     {
-                        for(int i = 0; i < oder.products.Count; i++)
-                        {
-                            if (oder.products[i].code_product == product.code_product)
+                        for(j = 0; j < oder.products.Count; j++)
+                        { 
+                            if (oder.products[j].code_product == product.code_product)
                             {
-                                oder.products[i].quantity_product += product.quantity_product;
+                                oder.products[j].quantity_product += product.quantity_product;
+                                break;
                             }
+                           
+                        }
+                        if (j == oder.products.Count)
+                        {
+                            oder.products.Add(product);
                         }
                     }                   
                     Console.Write("Continue? (Y/N): ");
@@ -267,7 +233,7 @@ namespace BaitapModule2_lan2.Bai3
         public static int CreateInteger(string str, int? min = null, int? max = null)
         {
             int num; bool result;
-            Console.WriteLine($"Enter {str}: ");
+            Console.Write($"Enter {str}: ");
             result = int.TryParse(Console.ReadLine(), out num);
             if (min.HasValue)
             {
@@ -275,7 +241,7 @@ namespace BaitapModule2_lan2.Bai3
                 {
                     while (!result || num < min.Value || num > max.Value)
                     {
-                        Console.WriteLine($"Enter again new {str} from {min.Value} to {max.Value}: ");
+                        Console.Write($"Enter again new {str} from {min.Value} to {max.Value}: ");
                         result = int.TryParse(Console.ReadLine(), out num);
                     }
                 }
@@ -283,7 +249,7 @@ namespace BaitapModule2_lan2.Bai3
                 {
                     while (!result || num < min.Value)
                     {
-                        Console.WriteLine($"Enter again new {str} greater than or equal to {min.Value}: ");
+                        Console.Write($"Enter again new {str} greater than or equal to {min.Value}: ");
                         result = int.TryParse(Console.ReadLine(), out num);
                     }
                 }
@@ -292,7 +258,7 @@ namespace BaitapModule2_lan2.Bai3
             {
                 while (!result)
                 {
-                    Console.WriteLine($"Enter again new  {str}: ");
+                    Console.Write($"Enter again new  {str}: ");
                     result = int.TryParse(Console.ReadLine(), out num);
                 }
             }
@@ -313,8 +279,8 @@ namespace BaitapModule2_lan2.Bai3
         public static int FindIndexProductInOder(int id_Custumer,int id_Oder,string code_product)
         {
             Method.ReadOnMember();
-            int pos_Custumer = Yield.FindIndexOfIdCustumer(id_Custumer);
-            int pos_Oder = Yield.FindIndexOderInOders(id_Custumer, id_Oder);
+            int pos_Custumer = Management.FindIndexOfIdCustumer(id_Custumer);
+            int pos_Oder = Management.FindIndexOderInOders(id_Custumer, id_Oder);
             if (pos_Custumer != -1)
             {
                 if (pos_Oder != -1)
@@ -335,7 +301,7 @@ namespace BaitapModule2_lan2.Bai3
         public static int FindIndexOderInOders(int id_Custumer, int id_Oder)
         {
             Method.ReadOnMember();
-            int pos_Custumer = Yield.FindIndexOfIdCustumer(id_Custumer);
+            int pos_Custumer = Management.FindIndexOfIdCustumer(id_Custumer);
             if(pos_Custumer!= -1)
             {
                 for (int i = 0; i < Method.data.custumers[pos_Custumer].oders.Count; i++)
@@ -348,7 +314,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             return -1;
         }
-
+        
 
     }
 }

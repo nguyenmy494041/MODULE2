@@ -1,0 +1,28 @@
+{
+  "Id_Custumer": 3,
+  "Name_Custumer": "NguyenGiaBao",
+  "Adrres": "QuangThanh",
+  "Phone_number": "0123987654",
+  "timePay": "06:49 AM 03/08/2020",
+  "total": 2280000,
+  "OrderItem": 0,
+  "OrderId": 0,
+  "timeOrder": "06:49 AM 03/08/2020",
+  "status": "Payed",
+  "products": [
+    {
+      "code_product": "CA37",
+      "name_product": "Calculator",
+      "price_product": 150000,
+      "quantity_product": 12,
+      "pay_money": 1800000
+    },
+    {
+      "code_product": "RF17",
+      "name_product": "Radiator fan",
+      "price_product": 80000,
+      "quantity_product": 6,
+      "pay_money": 480000
+    }
+  ]
+}

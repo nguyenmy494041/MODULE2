@@ -87,7 +87,12 @@ namespace BaitapModule2_lan2.Bai3
                 return false;
             }
         }
-        
+        public override string ToString()
+        {
+            
+                return $"{user_id}\t{user_name}\t\t{user_mail}\t\t\t{user_password}\t\t{Isadmin}";
+           
+        }
     }
    
 

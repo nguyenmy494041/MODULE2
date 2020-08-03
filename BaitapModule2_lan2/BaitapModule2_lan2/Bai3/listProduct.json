@@ -1,11 +1,1 @@
-{
-  "listProduct": [
-    {
-      "code_product": "MA23",
-      "name_product": "Chuot khong day",
-      "price_product": 135000,
-      "quantity_product": 0,
-      "pay_money": 0
-    }
-  ]
-}
+{"listProduct":[{"code_product":"CA37","name_product":"Calculator","price_product":150000,"quantity_product":0,"pay_money":0},{"code_product":"BS68","name_product":"Bluetooth speaker","price_product":185000,"quantity_product":0,"pay_money":0},{"code_product":"KB26","name_product":"Keyboard","price_product":140000,"quantity_product":0,"pay_money":0},{"code_product":"RF17","name_product":"Radiator fan","price_product":80000,"quantity_product":0,"pay_money":0}]}
