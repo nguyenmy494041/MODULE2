@@ -124,7 +124,7 @@ namespace BaitapModule2_lan2.Bai3
                             Console.WriteLine("6. Update orders according to order codes");
                             Console.WriteLine("7. Pay order");
                             Console.WriteLine("8. Exit");
-                            seclect1 = Management.CreateInteger("seclect", 1, 7);
+                            seclect1 = Management.CreateInteger("seclect", 1, 8);
                             Console.Clear();
                             switch (seclect1)
                             {

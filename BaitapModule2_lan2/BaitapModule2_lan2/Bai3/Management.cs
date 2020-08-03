@@ -15,7 +15,7 @@ namespace BaitapModule2_lan2.Bai3
         }
         
         public static Management management = new Management();
-        // tao moi 1 san pham
+      
         public static Product CreateProduct()
         {
             Product product = new Product();
@@ -35,7 +35,7 @@ namespace BaitapModule2_lan2.Bai3
             product.price_product = kq;
             return product;
         }
-        // ghi san pham vao file json
+       
         public static void PushProduct()
         {
             string path = $@"E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\Bai3\listProduct.json";
@@ -45,7 +45,7 @@ namespace BaitapModule2_lan2.Bai3
                 sw.Write(data);
             }
         }
-        // doc danh sach san pham tu file json
+       
         public static void ReadProduct()
         {
             string path = $@"E:\CODEGYM\Module2\BaitapModule2_lan2\BaitapModule2_lan2\Bai3\listProduct.json";
@@ -55,7 +55,7 @@ namespace BaitapModule2_lan2.Bai3
                 management = JsonConvert.DeserializeObject<Management>(data);
             }
         }
-        // them san pham vao danh sach
+       
         public static void AddProduct()
         {
             Management.ReadProduct();
@@ -72,7 +72,7 @@ namespace BaitapModule2_lan2.Bai3
                 Console.WriteLine($"\nProduct exits!");
             }
         }
-        // kiem tra xem san pham da co trong danh sach chua, neu co tra ve vi tri
+       
         public static int Find(string code_product)
         {
             for (int i = 0; i < management.listProduct.Count; i++)
@@ -84,7 +84,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             return -1;
         }
-        // thay doi gia cua san pham
+       
         public static void UpdateProduct()
         {
             Management.ReadProduct();
@@ -113,7 +113,7 @@ namespace BaitapModule2_lan2.Bai3
             }
 
         }
-        // xoa san pham ra khoi danh sach
+       
         public static void RemoveProduct()
         {
             Management.ReadProduct();
@@ -128,7 +128,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             else { Console.WriteLine($"\nProduct not exit!"); }
         }
-        // show san pham
+      
         public static void ShowProduct()
         {
             Management.ReadProduct();
@@ -138,7 +138,7 @@ namespace BaitapModule2_lan2.Bai3
                 Console.WriteLine($"{i+1}\t{management.listProduct[i].OutString()}");
             }
         }
-        // tim san pham
+       
         public static void FindProduct()
         {
             Management.ReadProduct();
@@ -152,9 +152,7 @@ namespace BaitapModule2_lan2.Bai3
             }
 
         }
-        // quan ly tat ca cac mat hang
        
-        // tao don hang
         public static void CreateNewOder(int id_Custumer)
         {
             Oder oder = new Oder();
@@ -229,7 +227,7 @@ namespace BaitapModule2_lan2.Bai3
                 Method.PushInDATA();
             }
         }
-        // tao 1 so nguyen
+       
         public static int CreateInteger(string str, int? min = null, int? max = null)
         {
             int num; bool result;
@@ -264,7 +262,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             return num;
         }
-        // ham tra ve vi tri cua User trong Custumer
+       
         public static int FindIndexOfIdCustumer(int id_Custumer)
         {
             Method.ReadOnMember();
@@ -275,7 +273,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             return -1;
         }
-        // tim xem san pham da co trong Oder ko, tra ve vi tri
+       
         public static int FindIndexProductInOder(int id_Custumer,int id_Oder,string code_product)
         {
             Method.ReadOnMember();
@@ -297,7 +295,7 @@ namespace BaitapModule2_lan2.Bai3
             }
             return -1;
         }
-        // tim vi tri cua Oder trong Odres
+      
         public static int FindIndexOderInOders(int id_Custumer, int id_Oder)
         {
             Method.ReadOnMember();
