@@ -76,7 +76,7 @@ namespace KiemtraMODULE.Bai2
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("No choice!");
+                        Console.WriteLine("No choose!");
                         break;
                 }
             }

@@ -10,21 +10,18 @@ namespace KiemtraMODULE.Bai3
         static int tempAccountID = 1;
         static void Main(string[] args)
         {
-            StartManagementAccount();
-        }
-        static void StartManagementAccount()
-        {
-            string choice = "5";
-            while (choice != "4")
+            string choose = "5";
+            while (choose != "4")
             {
                 Console.WriteLine(" - - - - Management Account - - - - ");
-                Console.WriteLine("1. Creat Account.");
+                Console.WriteLine("1. Creat new Account.");
                 Console.WriteLine("2. Pay Into.");
                 Console.WriteLine("3. Show Customers data.");
                 Console.WriteLine("4. Exit.");
-                Console.Write("Enter you choice: ");
-                choice = Console.ReadLine();
-                switch (choice)
+                Console.Write("\nEnter you choose: ");
+                choose = Console.ReadLine();
+                Console.Clear();
+                switch (choose)
                 {
                     case "1":
                         CreateAccount();
@@ -40,14 +37,15 @@ namespace KiemtraMODULE.Bai3
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("No choice!");
+                        Console.WriteLine("No choose!");
                         break;
                 }
+                Console.WriteLine();
             }
-        }
+        }        
         static void ShowData()
         {
-            Console.WriteLine("...Show Customers data...");
+            Console.WriteLine(" - - -Show Customers data - - - \n");
             foreach (var account in AccountList.Values)
             {
                 Console.WriteLine(account.ShowInfor());
@@ -55,7 +53,7 @@ namespace KiemtraMODULE.Bai3
         }
         static void PayInto()
         {
-            Console.WriteLine("...Pay Into...");
+            Console.WriteLine(" - - - Pay Into - - - \n");
             Console.Write("Enter Account ID: ");
             string id_Account = Console.ReadLine();
             int idAccount;
@@ -71,16 +69,17 @@ namespace KiemtraMODULE.Bai3
                 float amount;
                 while (!float.TryParse(strAmount, out amount) || amount <= 0)
                 {
-                    Console.Write("Enter again Account ID: ");
+                    Console.Write("Enter again Amount: ");
                     strAmount = Console.ReadLine();
                 }
-                foreach (var account in AccountList.Values)
+                foreach (var key in AccountList.Values)
                 {
-                    if (account.AccountId == idAccount)
+                    if (key.AccountId == idAccount)
                     {
-                        account.PayInto(amount);
+                        key.PayInto(amount);
                     }
                 }
+                Console.WriteLine("\nPayed into!");
             }
             else
             {
@@ -101,7 +100,7 @@ namespace KiemtraMODULE.Bai3
         }
         static void CreateAccount()
         {
-            Console.WriteLine("...Creat Account...");
+            Console.WriteLine(" - - - Creat new Account - - - ");
             Account account = new Account();
             Console.Write("Enter Frist name: ");
             string fristNameAccount = Console.ReadLine();
@@ -114,6 +113,7 @@ namespace KiemtraMODULE.Bai3
             account.Lastname = lastNameAccount;
             account.Gender = genderAccount;
             AccountList.Add(account.AccountId, account);
+            Console.WriteLine("\nCreate new success!");
         }
     }
 }   

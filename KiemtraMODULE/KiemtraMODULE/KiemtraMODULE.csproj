@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>KiemtraMODULE.Bai2.Program</StartupObject>
+	  <StartupObject>KiemtraMODULE.Bai3.Bank</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
