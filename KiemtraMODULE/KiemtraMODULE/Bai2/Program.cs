@@ -8,7 +8,7 @@ namespace KiemtraMODULE.Bai2
     {
         public const int min = 10;
         public const int max = 50;
-        static int[] arr = new int[0];
+        static int[] array = new int[0];
         static void Main(string[] args)
         {
             string choose = "";
@@ -20,17 +20,17 @@ namespace KiemtraMODULE.Bai2
                 Console.WriteLine("3. Sort array.");
                 Console.WriteLine("4. Search array.");
                 Console.WriteLine("5. Exit.");
-                Console.Write("Enter your choice: ");
+                Console.Write("Enter your choose: ");
                 choose = Console.ReadLine();
                 switch (choose)
                 {
                     case "1":
                         Console.WriteLine("Create Array...");
-                        arr = Create_Print_Array();
+                        array = Create_Print_Array();
                         break;
                     case "2":
                         Console.WriteLine("Check symmetric array...");
-                        if (IsIncrement(arr))
+                        if (IsIncrement(array))
                         {
                             Console.WriteLine("The array is increment!");
                         }
@@ -41,20 +41,20 @@ namespace KiemtraMODULE.Bai2
                         break;
                     case "3":
                         Console.WriteLine("Sort array...");
-                        if (IsEmptyArray(arr))
+                        if (IsEmptyArray(array))
                         {
                             Console.WriteLine("The array is empty!");
                         }
                         else
                         {
                             Console.Write("Print array: ");
-                            BubbleSort(arr);
-                            PrintArray(arr);
+                            BubbleSort(array);
+                            PrintArray(array);
                         }
                         break;
                     case "4":
                         Console.WriteLine("Search array...");
-                        if (IsEmptyArray(arr))
+                        if (IsEmptyArray(array))
                         {
                             Console.WriteLine("The array is empty!");
                         }
@@ -68,7 +68,7 @@ namespace KiemtraMODULE.Bai2
                                 Console.Write("Enter again value search!: ");
                                 number = Console.ReadLine();
                             }
-                            Find(arr, value);
+                            Find(array, value);
                         }
                         break;
                     case "5":

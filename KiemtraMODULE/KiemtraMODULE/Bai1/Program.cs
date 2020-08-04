@@ -6,23 +6,23 @@ namespace KiemtraMODULE.Bai1
 {
     class Program
     {
-        //public static int[,] matrix;
+       
         static void Main()
         {
             int size = CreateInteger("size", 2);
             int[,] matrix = CreateMatrix(size);
             Console.WriteLine("\nShow matrix: \n");
             ShowMatrix(matrix);
-            Console.Write($"Value min of matrix: {FindMin(matrix)}\n");
+            Console.WriteLine($"\nValue min of matrix: {FindMin(matrix)}\n");
+            Console.WriteLine($"Sum the values on the main diagonal: {Sumdiagonal(matrix)}\n");
+            Console.WriteLine($"Sum the values on the diagonal sub: {Sumdiagonalfiller(matrix)}\n");
             Console.WriteLine($"Absolute value for main diagonal and secondary diagonal: {DiagonalDifference(matrix)}");
-
-
 
         }
         static int CreateInteger(string str, int? min = null, int? max = null)
         {
             int num; bool result;
-            Console.WriteLine($"Enter {str}: ");
+            Console.Write($"Enter {str}: ");
             result = int.TryParse(Console.ReadLine(), out num);
             if (min.HasValue)
             {
