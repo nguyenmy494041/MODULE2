@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "53NODcLuXKqkNfk1hK2o4UR1CIX/GBxjDAqARHvtqK87IhhSCt18T8DYRAdtZ+PQCZ7n0WTm9kjZdB/vYfQQMA==",
+  "success": true,
+  "projectFilePath": "E:\\CODEGYM\\Module2\\KiemtraMODULE\\KiemtraMODULE\\KiemtraMODULE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
