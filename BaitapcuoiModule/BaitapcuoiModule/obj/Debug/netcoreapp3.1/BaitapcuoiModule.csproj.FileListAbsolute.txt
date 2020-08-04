@@ -1,0 +1,15 @@
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.exe
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.csprojAssemblyReference.cache
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.AssemblyInfoInputs.cache
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.AssemblyInfo.cs
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.deps.json
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.runtimeconfig.json
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.runtimeconfig.dev.json
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.dll
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\BaitapcuoiModule.pdb
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.csproj.CoreCompileInputs.cache
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.csproj.CopyComplete
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.dll
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.pdb
+E:\CODEGYM\Module2\BaitapcuoiModule\BaitapcuoiModule\obj\Debug\netcoreapp3.1\BaitapcuoiModule.genruntimeconfig.cache

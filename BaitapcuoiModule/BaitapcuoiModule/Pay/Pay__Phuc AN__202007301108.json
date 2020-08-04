@@ -1,0 +1,24 @@
+{
+  "oredrId": 2,
+  "nameCustomer": "Phuc AN",
+  "adrees": "koj",
+  "startime": "11:06 AM 30/07/2020",
+  "status": "Payed",
+  "orders": [
+    {
+      "nameproduct": "Bluetooth speaker",
+      "codeproduct": "A3",
+      "priceproduct": 150000,
+      "quantity": 4,
+      "money": 600000
+    },
+    {
+      "nameproduct": "Radiator fan     ",
+      "codeproduct": "A6",
+      "priceproduct": 80000,
+      "quantity": 6,
+      "money": 480000
+    }
+  ],
+  "total": 1080000
+}
