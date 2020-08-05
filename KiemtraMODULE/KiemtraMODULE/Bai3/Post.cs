@@ -4,28 +4,33 @@ using System.Text;
 
 namespace KiemtraMODULE.Bai3
 {
-    public interface IAccount
+    public interface IPost
     {
-        public string ShowInfor();
-        public void PayInto(float Amount);
+        public string Display();
+        public float CalculatorRate();
     }
-    class Post : IAccount
+    class Post : IPost
     {
-        public int AccountId { get; set; }
-        public string Fristname { get; set; }
-        public string Lastname { get; set; }
-        public string Gender { get; set; }
-        public float Banlance { get; private set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public string Author { get; set; }
+        public float AverageRate => CalculatorRate();
+        public int[] Rates = new int[4];
+        public float CalculatorRate()
+        {
+            float sum = 0;
+            foreach (var item in Rates)
+            {
+                sum += item;
+            }
+            return sum / Rates.Length;
 
-        public void PayInto(float Amount)
+        }
+
+        public string Display()
         {
-            Banlance += Amount;
-           
-        }   
-       
-        public string ShowInfor()
-        {
-            return $"Account ID: {AccountId}\tFrist Name: {Fristname}\tLasrt Name: {Lastname}\tGender: {Gender}\tBanlance: {Banlance}";
+            return $"{Id}\t{Title}\t{Content}\t{Author}\t{AverageRate}";
         }
     }
 

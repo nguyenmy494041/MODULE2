@@ -23,26 +23,35 @@ namespace KiemtraMODULE.Bai2
                 {
                     choise = CreateChoise();
                 }
+                Console.Clear();
                 switch (choise)
                 {
-                    case 1:                       
+                    case 1:
+                        Console.WriteLine("\n - - Create new array - - \n");
                         array = CreateArray();
+                        Console.WriteLine("Print array: \n");
                         PrintArray(array);
                         break;
                     case 2:
-                        Console.WriteLine(IsSymmetryArray(array));
+                        Console.WriteLine($"\nArray is symmetry: {IsSymmetryArray(array)}");
                         break;
                     case 3:
+                        Console.WriteLine("Array after sort:\n");
                         BubbleSort(array);
                         PrintArray(array);
                         break;
                     case 4:
                         if (IsSortArray(array))
                         {
+                            Console.WriteLine("Find out where the value is in the array. \n");
                             int value = CreateInterger("value");
+                            Console.WriteLine();
                             Find(value, array);
                         }
-                        else { Console.WriteLine(" Array is not a rising array"); }
+                        else { Console.WriteLine(" Array is not a rising array, select 3 to sort the array"); }
+                        break;
+                    case 5:
+                        Console.WriteLine(" \n- - - - EXIT - - - - ");
                         break;
                 }
                 Console.WriteLine();
@@ -84,7 +93,7 @@ namespace KiemtraMODULE.Bai2
             int[] result = new int[size];
             for (int i = 0; i < result.Length; i++)
             {
-                result[i] = rnd.Next(30, 40);
+                result[i] = rnd.Next(10, 99);
             }
             return result;
         }
