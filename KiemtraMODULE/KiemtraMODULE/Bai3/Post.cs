@@ -9,7 +9,7 @@ namespace KiemtraMODULE.Bai3
         public string ShowInfor();
         public void PayInto(float Amount);
     }
-    class Account : IAccount
+    class Post : IAccount
     {
         public int AccountId { get; set; }
         public string Fristname { get; set; }

@@ -9,64 +9,43 @@ namespace KiemtraMODULE.Bai1
        
         static void Main()
         {
-            int size = CreateInteger("size", 2);
-            int[,] matrix = CreateMatrix(size);
-            Console.WriteLine("\nShow matrix: \n");
+            int[,] matrix = CreateMatrix();
+            Console.WriteLine("Matrix: ");
+            PrintMatrix(matrix);
+            Console.WriteLine($"\nValue max in matrix: {FindMax(matrix)}");
+            Console.WriteLine("\nMatrix Lower Triangle: ");
             ShowMatrix(matrix);
-            Console.WriteLine($"\nValue min of matrix: {FindMin(matrix)}\n");
-            Console.WriteLine($"Sum the values on the main diagonal: {Sumdiagonal(matrix)}\n");
-            Console.WriteLine($"Sum the values on the diagonal sub: {Sumdiagonalfiller(matrix)}\n");
-            Console.WriteLine($"Absolute value for main diagonal and secondary diagonal: {DiagonalDifference(matrix)}");
-
         }
-        static int CreateInteger(string str, int? min = null, int? max = null)
+       static int CreateInterger(string st)
         {
-            int num; bool result;
-            Console.Write($"Enter {str}: ");
-            result = int.TryParse(Console.ReadLine(), out num);
-            if (min.HasValue)
+            int num;
+            Console.WriteLine($"Enter number {st} : ");
+            string str = Console.ReadLine();
+            bool result = int.TryParse(str, out num);
+            while (!result || num < 2)
             {
-                if (max.HasValue)
-                {
-                    while (!result || num < min.Value || num > max.Value)
-                    {
-                        Console.WriteLine($"Enter again new {str} from {min.Value} to {max.Value}: ");
-                        result = int.TryParse(Console.ReadLine(), out num);
-                    }
-                }
-                else
-                {
-                    while (!result || num < min.Value)
-                    {
-                        Console.WriteLine($"Enter again new {str} greater than or equal to {min.Value}: ");
-                        result = int.TryParse(Console.ReadLine(), out num);
-                    }
-                }
-            }
-            else
-            {
-                while (!result)
-                {
-                    Console.WriteLine($"Enter again new  {str}: ");
-                    result = int.TryParse(Console.ReadLine(), out num);
-                }
+                Console.WriteLine($"Enter again number {st}: ");
+                str = Console.ReadLine();
+                result = int.TryParse(str, out num);
             }
             return num;
         }
-        static int[,] CreateMatrix(int size)
+        static int[,] CreateMatrix()
         {
-            int[,] matrix = new int[size, size];
+            int n = CreateInterger("n");
+            int m = CreateInterger("m");
+            int[,] matrix = new int[n, m];
             Random rd = new Random();
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    matrix[i, j] = rd.Next(40, 80);
+                    matrix[i, j] = rd.Next(10, 99);
                 }
             }
             return matrix;
         }
-        static void ShowMatrix(int[,] matrix)
+        static void PrintMatrix(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
@@ -77,46 +56,33 @@ namespace KiemtraMODULE.Bai1
                 Console.WriteLine();
             }
         }
-        static int FindMin(int[,] matrix)
+        static int FindMax(int[,] matrix)
         {
-            int min = matrix[0, 0];
+            int max = matrix[0, 0];
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if( matrix[i,j]< min)
+                    if( matrix[i,j] > max)
                     {
-                        min = matrix[i, j];
+                        max = matrix[i, j];
                     }
                 }
                 
             }
-            return min;
+            return max;
         }
-        static int Sumdiagonal(int[,] matrix)
+        public static void ShowMatrix(int[,] matrix)
         {
-            int sum = 0;
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                sum += matrix[i, i];
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write($"{matrix[i, j]} ");
+                }
+                Console.WriteLine();
             }
-            return sum;
         }
-        static int Sumdiagonalfiller(int[,] matrix)
-        {
-            int sum = 0;
-            
-            for (int i = 0, j = matrix.GetLength(0)-1; i < matrix.GetLength(0); i++,j--)
-            {
-                sum += matrix[i, j];
-            }
-            return sum;
-        }
-        static int DiagonalDifference(int[,] matrix)
-        {
-            int diagonal = Sumdiagonal(matrix);
-            int diagonalfiller = Sumdiagonalfiller(matrix);
-            return Math.Abs(diagonal - diagonalfiller);
-        }
+
     }
 }

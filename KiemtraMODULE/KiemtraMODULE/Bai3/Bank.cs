@@ -6,7 +6,7 @@ namespace KiemtraMODULE.Bai3
 {
     class Bank
     {
-        static Dictionary<int, Account> AccountList = new Dictionary<int, Account>();
+        static Dictionary<int, Post> AccountList = new Dictionary<int, Post>();
         static int tempAccountID = 1;
         static void Main(string[] args)
         {
@@ -57,7 +57,7 @@ namespace KiemtraMODULE.Bai3
             Console.Write("Enter Account ID: ");
             string id_Account = Console.ReadLine();
             int idAccount;
-            while (!Int32.TryParse(id_Account, out idAccount) || idAccount <= 0)
+            while (!int.TryParse(id_Account, out idAccount) || idAccount <= 0)
             {
                 Console.Write("Enter again Account ID: ");
                 id_Account = Console.ReadLine();
@@ -101,7 +101,7 @@ namespace KiemtraMODULE.Bai3
         static void CreateAccount()
         {
             Console.WriteLine(" - - - Creat new Account - - - ");
-            Account account = new Account();
+            Post account = new Post();
             Console.Write("Enter Frist name: ");
             string fristNameAccount = Console.ReadLine();
             Console.Write("Enter Last name: ");

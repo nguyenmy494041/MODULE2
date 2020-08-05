@@ -6,225 +6,160 @@ namespace KiemtraMODULE.Bai2
 {
     class Program
     {
-        public const int min = 10;
-        public const int max = 50;
-        static int[] array = new int[0];
+        private static int[] array;
         static void Main(string[] args)
         {
-            string choose = "";
-            while (choose != "5")
+            int choise = -1;
+            while (choise != 5)
             {
-                Console.WriteLine("Menu");
-                Console.WriteLine("1. Create Array.");
-                Console.WriteLine("2. Check increment array.");
-                Console.WriteLine("3. Sort array.");
-                Console.WriteLine("4. Search array.");
+                Console.WriteLine("Please input an option:");
+                Console.WriteLine("1. Create array. ");
+                Console.WriteLine("2. Check for symmetric arrays.");
+                Console.WriteLine("3. Array sort."); ;
+                Console.WriteLine("4. Find.");
                 Console.WriteLine("5. Exit.");
-                Console.Write("Enter your choose: ");
-                choose = Console.ReadLine();
-                switch (choose)
+                choise = CreateChoise();
+                while(array == null && choise != 1)
                 {
-                    case "1":
-                        Console.WriteLine("Create Array...");
-                        array = Create_Print_Array();
+                    choise = CreateChoise();
+                }
+                switch (choise)
+                {
+                    case 1:                       
+                        array = CreateArray();
+                        PrintArray(array);
                         break;
-                    case "2":
-                        Console.WriteLine("Check symmetric array...");
-                        if (IsIncrement(array))
-                        {
-                            Console.WriteLine("The array is increment!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("The array is not increment!");
-                        }
+                    case 2:
+                        Console.WriteLine(IsSymmetryArray(array));
                         break;
-                    case "3":
-                        Console.WriteLine("Sort array...");
-                        if (IsEmptyArray(array))
-                        {
-                            Console.WriteLine("The array is empty!");
-                        }
-                        else
-                        {
-                            Console.Write("Print array: ");
-                            BubbleSort(array);
-                            PrintArray(array);
-                        }
+                    case 3:
+                        BubbleSort(array);
+                        PrintArray(array);
                         break;
-                    case "4":
-                        Console.WriteLine("Search array...");
-                        if (IsEmptyArray(array))
+                    case 4:
+                        if (IsSortArray(array))
                         {
-                            Console.WriteLine("The array is empty!");
+                            int value = CreateInterger("value");
+                            Find(value, array);
                         }
-                        else
-                        {
-                            Console.Write("Enter value search: ");
-                            string number = Console.ReadLine();
-                            int value;
-                            while (!Int32.TryParse(number, out value))
-                            {
-                                Console.Write("Enter again value search!: ");
-                                number = Console.ReadLine();
-                            }
-                            Find(array, value);
-                        }
-                        break;
-                    case "5":
-                        Console.WriteLine("Exit...");
-                        Environment.Exit(0);
-                        break;
-                    default:
-                        Console.WriteLine("No choose!");
+                        else { Console.WriteLine(" Array is not a rising array"); }
                         break;
                 }
+                Console.WriteLine();
             }
         }
-        static void BubbleSort(int[] array)
+        static int CreateChoise()
+        {
+            int num;
+            Console.Write($"Enter choise : ");
+            string str = Console.ReadLine();
+            bool result = int.TryParse(str, out num);
+            while (!result || num < 1 || num > 5)
+            {
+                Console.Write($"Enter again choise: ");
+                str = Console.ReadLine();
+                result = int.TryParse(str, out num);
+            }
+            return num;
+        }
+
+        static int CreateInterger(string st)
+        {
+            int num;
+            Console.Write($"Enter number {st} : ");
+            string str = Console.ReadLine();
+            bool result = int.TryParse(str, out num);
+            while (!result || num < 2)
+            {
+                Console.Write($"Enter again number {st}: ");
+                str = Console.ReadLine();
+                result = int.TryParse(str, out num);
+            }
+            return num;
+        }
+        static int[] CreateArray()
+        {
+            int size = CreateInterger("size");
+            Random rnd = new Random();
+            int[] result = new int[size];
+            for (int i = 0; i < result.Length; i++)
+            {
+                result[i] = rnd.Next(30, 40);
+            }
+            return result;
+        }
+        static bool IsSymmetryArray(int[] array)
+        {
+            bool result = true;
+            int fist = 0, last = array.Length - 1;
+            while (fist < last)
+            {
+                if (array[fist] != array[last]) result = false;
+                fist++;
+                last--;
+            }
+            return result;
+        }
+        static void BubbleSort(int[] arr)
         {
             int i, j, temp;
-            int n = array.Length;
+            int n = arr.Length;
             bool swapped;
             for (i = 0; i < n - 1; i++)
             {
                 swapped = false;
                 for (j = 0; j < n - i - 1; j++)
                 {
-                    if (array[j] > array[j + 1])
+                    if (arr[j] > arr[j + 1])
                     {
-                        temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
                         swapped = true;
                     }
                 }
+              
                 if (swapped == false)
                     break;
             }
         }
-        static void Find(int[] array, int value)
+        static void PrintArray(int[] array)
         {
-            if (IsCanSortUpArray(array))
-            {
-                int[] newarr = SelectionSort(array);
-                int index = BinaraySearch(newarr, value);
-                if (index != -1)
-                {
-                    Console.WriteLine($"Sort array: ");
-                    PrintArray(newarr);
-                    Console.WriteLine($"Result search: Value {value} is index {index} in array");
-                }
-                else
-                {
-                    Console.WriteLine("Result search: Value not in array");
-                }
-            }
-            else
-            {
-                Console.WriteLine("This function is not available with this array!");
-            }
-        }
-        static bool IsCanSortUpArray(int[] array)
-        {
-            int[] arrA = new int[array.Length];
             for (int i = 0; i < array.Length; i++)
             {
-                arrA[i] = array[i];
-            }
-            int[] newarr = SelectionSort(arrA);
-            for (int i = 1; i < newarr.Length; i++)
-            {
-                if (newarr[i] == newarr[i - 1])
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-        static int BinaraySearch(int[] arr, int value)
-        {
-            int low = 0;
-            int high = arr.Length - 1;
-            while (high >= low)
-            {
-                int mid = (low + high) / 2;
-                if (value < arr[mid])
-                {
-                    high = mid - 1;
-                }
-                else if (value == arr[mid])
-                {
-                    return mid;
-                }
-                else
-                {
-                    low = mid + 1;
-                }
-            }
-            return -1;
-        }
-        static bool IsEmptyArray(int[] array)
-        {
-            if (array.Length != 0)
-            {
-                return false;
-            }
-            return true;
-        }
-        static int[] SelectionSort(int[] array)
-        {
-            int n = array.Length;
-            for (int i = 0; i < n - 1; i++)
-            {
-                int min_idx = i;
-                for (int j = i + 1; j < n; j++)
-                    if (array[j] < array[min_idx])
-                        min_idx = j;
-                int temp = array[min_idx];
-                array[min_idx] = array[i];
-                array[i] = temp;
-            }
-            return array;
-        }
-        static bool IsIncrement(int[] array)
-        {
-            for (int i = 0; i < array.Length - 1; i++)
-            {
-                if (array[i] >= array[i + 1])
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-        static int[] Create_Print_Array()
-        {
-            Console.WriteLine("Enter size array");
-            string number = Console.ReadLine();
-            int size = 0;
-            while (!Int32.TryParse(number, out size) || size <= 0)
-            {
-                Console.Write("Enter again size array!: ");
-                number = Console.ReadLine();
-            }
-            int[] arr = new int[size];
-            Random rnd = new Random();
-            for (int i = 0; i < size; i++)
-            {
-                arr[i] = rnd.Next(min, max);
-            }
-            Console.Write("Print Array: ");
-            PrintArray(arr);
-            return arr;
-        }
-        static void PrintArray(int[] arr)
-        {
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.Write($"{arr[i]}, ");
+                Console.Write(array[i] + "  ");
             }
             Console.WriteLine();
+        }
+        static bool IsSortArray(int[] array)
+        {
+            bool check = true;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if (array[i] > array[i + 1])
+                {
+                    check = false;
+                }
+            }
+            return check;
+        }
+        static void Find(int value, int[] array)
+        {
+            int first = 0, last = array.Length - 1, result = -1;
+            while (first < last)
+            {
+                int mid = (first + last) / 2;
+                if (array[mid] == value)
+                {
+                    result = mid;
+                    break;
+                }
+                else if (array[mid] > value) { last = mid - 1; }
+                else { first = mid + 1; }
+            }
+            if (result == -1) { Console.WriteLine("Not find! "); }
+            else { Console.WriteLine($"{value} is element {result}."); }
+
         }
     }
 }
